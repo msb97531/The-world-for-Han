@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>正念超越App：真正的觉察是什么 | ElevateMind</title>
+  <meta name="description" content="你的手机无法教你临在。真正的正念比游戏化版本更混乱、更艰难，也 infinitely 更值得。这是一份关于觉察的深度指南。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;900&family=Noto+Serif+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    body { font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Noto Serif SC', Georgia, serif; }
+    .article-hero { padding: 40px 0 20px; text-align: center; }
+    .article-hero h1 { max-width: 800px; margin: 0 auto 16px; }
+    .article-hero .article-meta-bar { display: flex; justify-content: center; gap: 24px; font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 24px; }
+    .article-hero img { width: 100%; max-width: 1200px; height: 500px; object-fit: cover; border-radius: var(--radius-lg); margin: 0 auto; display: block; }
+    .article-content { max-width: 720px; margin: 0 auto; padding: 40px 24px; }
+    .article-content h2 { font-size: 1.5rem; margin-top: 48px; margin-bottom: 16px; }
+    .article-content h3 { font-size: 1.2rem; margin-top: 32px; margin-bottom: 12px; color: var(--color-accent); }
+    .article-content p { margin-bottom: 20px; font-size: 1.05rem; line-height: 1.8; }
+    .pull-quote {
+      border-left: 4px solid var(--color-accent);
+      padding: 20px 28px;
+      margin: 32px 0;
+      background: var(--color-accent-light);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.25rem;
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--color-text);
+    }
+    .pull-quote cite {
+      display: block; margin-top: 12px; font-size: 0.85rem; font-style: normal;
+      font-family: 'Noto Sans SC', sans-serif; color: var(--color-text-secondary);
+    }
+    .key-takeaways {
+      background: var(--color-surface); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: 32px; margin: 48px 0;
+    }
+    .key-takeaways h2 { margin-top: 0; font-size: 1.3rem; }
+    .key-takeaways ul { list-style: disc; padding-left: 24px; margin-top: 16px; }
+    .key-takeaways li { margin-bottom: 10px; font-size: 0.95rem; line-height: 1.7; }
+    .share-section { display: flex; align-items: center; gap: 16px; margin: 40px 0; padding-top: 24px; border-top: 1px solid var(--color-border); }
+    .share-section span { font-size: 0.85rem; font-weight: 600; color: var(--color-text-secondary); }
+    .related-articles { margin: 48px 0; }
+    .related-articles h2 { font-size: 1.3rem; margin-bottom: 20px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .related-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 20px; transition: all 0.3s; }
+    .related-card:hover { border-color: var(--color-accent); transform: translateY(-2px); }
+    .related-card h4 { font-size: 0.95rem; margin-bottom: 8px; }
+    .related-card p { font-size: 0.8rem; color: var(--color-text-secondary); line-height: 1.5; }
+    .reading-time-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--color-accent-light); color: var(--color-accent); padding: 4px 12px; border-radius: 100px; font-size: 0.75rem; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="read-progress" id="read-progress"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../" class="logo"><span class="logo-mark">◈</span><span>ElevateMind</span></a>
+      <nav class="nav-links">
+        <a href="../">首页</a>
+        <a href="../categories/conscious-self.html" class="active">自我认知</a>
+        <a href="../categories/wealth-architecture.html">财富架构</a>
+        <a href="../categories/career-purpose.html">职业使命</a>
+        <a href="../categories/relationship-dynamics.html">关系智慧</a>
+        <a href="../categories/trailblazers.html">思想巨擘</a>
+        <a href="../categories/high-dimensional.html">高维思维</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn-ghost" id="theme-toggle" title="切换深色模式">🌙</button>
+        <button class="btn btn-primary">订阅</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="article-hero">
+    <div class="container">
+      <div class="hero-tag">🧠 自我认知</div>
+      <h1>正念超越App：真正的觉察是什么</h1>
+      <div class="article-meta-bar">
+        <span class="reading-time-badge">📖 约12分钟阅读</span>
+        <span>📅 2026年5月24日</span>
+        <span>✍️ ElevateMind 编辑部</span>
+      </div>
+      <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1200&h=600&fit=crop" alt="一杯茶与宁静的晨光">
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="ad-unit ad-header" style="margin:24px auto;max-width:1200px;">
+      <p>728×90 头部广告位</p>
+    </div>
+  </div>
+
+  <article class="article-content">
+    <p class="lead" style="font-size:1.2rem;color:var(--color-text-secondary);line-height:1.9;margin-bottom:32px;">
+      打开应用商店搜索"正念"，你会得到几百个结果：游戏化冥想App、呼吸计时器、睡眠故事、情绪追踪器。它们大多承诺同样的东西——更快入睡、更少焦虑、更高效率。但这里有一个尖锐的事实：你的手机无法教你临在。它只能教你与手机相处。真正的觉察不在任何App里，它在你关掉所有屏幕之后开始，在那个没有任何人、没有任何事物可以替你进入的内在空间里。这条路比游戏化版本更混乱、更艰难，也 infinitely 更值得。
+    </p>
+
+    <h2>被商业化的觉察</h2>
+    <p>正念——mindfulness——被剥离了它最深的根系，变成了一种消费品。在原始佛教语境中，正念（sati）是一种完整的觉醒状态：对当下经验的清晰、无评判的觉知。它不是为了放松，不是为了提高效率，不是为了更好地睡觉。它的终极目标只有一个：看清实相——包括你自己——的本质。</p>
+    <p>但商业把正念改造成了一个减压工具。你可以在通勤路上"做"正念，在工作间隙"做"正念，在睡前"做"正念——就像服用一颗精神维他命。这种版本的有用性不容否认：临床研究表明，即使是简化版的正念练习，也能降低皮质醇水平、改善血压、缓解慢性疼痛。但有用不等于真实。把正念当作工具，就像把剑术当作健身——你可以从中获得健康益处，但你从未触碰到剑术的灵魂。</p>
+    <p>真正的觉察不是一项你可以"完成"的练习。它不是十分钟的任务，而是一种存在方式。它要求你在每一次呼吸中保持清醒——在开会时，在洗碗时，在与伴侣争吵时，在深夜独自醒来的时刻。这种觉察不需要App的引导，不需要背景音乐，不需要计时器。它需要的东西更稀有：你愿意在无掩护的情况下直面自己的内在景观。</p>
+
+    <div class="pull-quote">
+      "真正的觉察不是观察什么特别的对象，而是观察观察者本身。当你觉察到那个正在觉察的意识时，你才触及了正念的核心。"
+      <cite>—— 改编自一行禅师</cite>
+    </div>
+
+    <h2>觉察不是什么</h2>
+    <p>要理解真正的觉察，最好的方式可能是先澄清它不是什么。觉察不是放松。很多人第一次尝试正念时感到失望——"我没有变放松，反而更焦虑了。"这正是它在工作。觉察不会选择性地只照亮令你舒适的经验；它照亮一切，包括你一直在逃避的东西。如果你只想要放松，泡个热水澡更有效。觉察的目的是清晰，不是舒适。</p>
+    <p>觉察也不是清空念头。另一个常见的误解是"正念就是什么也不想"。这不仅是错误的，而且是不可能的。人类的大脑每秒产生数十个念头，试图停止它们就像试图停止心跳。真正的觉察是：你注意到自己在思考，然后你不跟随这个念头进入它的叙事迷宫。念头来来去去，而你保持在场。</p>
+    <p>觉察同样不是逃避现实。有些人把正念当作一种精神上的止痛片——当生活变得艰难时，逃到"当下"里躲一躲。但当下包含了一切，包括痛苦。逃避当下的痛苦，恰恰是对当下的背叛。觉察要求你驻留在不适中，不是为了受难，而是为了看清它的真实质地——它在身体的哪里？它如何变化？它背后是什么信念？这种看清本身就具有转化力量。</p>
+
+    <h2>身体：觉察的入口</h2>
+    <p>大多数人在生活中与自己的身体失去了联系。他们活着上半身——头脑不断运转，而身体变成了被忽视的运输工具，只是负责把头脑从一个地方运到另一个地方。直到背痛发作、胃病加重、心悸频繁，他们才被迫注意到身体在 screaming。觉察的练习，就是从重新连接身体开始的。</p>
+    <p>身体觉察不是"注意你的呼吸"这么简单的口号。它是在每一个时刻询问：我身体的此刻发生了什么？肩膀是否不自觉地耸起？下颌是否在不知不觉中咬紧？胃部是否有难以命名的紧绷？呼吸是深还是浅？这些信号不是随机的身体噪音——它们是你情绪状态的物理地图。焦虑藏身于肩膀，愤怒藏身于腹部，悲伤藏身于胸口。学会阅读这张地图，你就获得了一种不需要语言的情绪理解能力。</p>
+    <p>这种能力在高压情境下尤为珍贵。当一场重要谈判进入僵局、当一段亲密关系面临危机、当内心被恐惧淹没时，头脑已经无法信任——它被杏仁核劫持了。但身体仍然在说真话。如果你足够熟悉自己的身体信号，你可以在情绪全面爆发之前就捕捉到它的前兆。那个瞬间——在你对刺激做出自动反应之前的几毫秒——就是觉察创造的自由空间。</p>
+
+    <div class="pull-quote">
+      "身体不是一个运输工具，不是一具等待被丢弃的躯壳。身体是你通往当下的唯一路径，也是你与这个世界最直接的连接。"
+      <cite>—— 埃克哈特·托利，《当下的力量》作者</cite>
+    </div>
+
+    <h2>念头的观察者</h2>
+    <p>如果你持续地练习身体觉察，一个有趣的现象会慢慢发生：你会开始注意到念头本身。不是念头的内容，而是念头的<em>存在</em>。你会意识到，在你的头脑里，有一台永不停止的叙事机器在运转。它不断地讲故事——关于过去、关于未来、关于自己、关于他人。这些故事如此熟悉，以至于你早已把它们等同于"我"。</p>
+    <p>觉察揭示了一个惊人的事实：你不是你的念头。念头来来去去，而你——那个注意到念头来来去去的某种东西——保持不变。这个发现是革命性的。因为如果你的自我认同建立在你的念头上，那么每一个负面念头都是一场小型身份危机。"我不够好"变成"我就是不够好"。"这件事会失败"变成"我就是一个失败者"。但当觉察足够深时，你看见这些念头只是精神事件，就像天空中的云朵——它们飘过，而天空仍是天空。</p>
+    <p>这种觉察不会自动消除负面念头。你仍然会焦虑，仍然会自我批评，仍然会恐惧。但关系改变了。你不再<em>是</em>焦虑，你正在<em>经历</em>焦虑。这个语法上的微小转变，却是心理自由度上的巨大飞跃。因为任何你能够观察的东西，你就不再完全被它控制。观察创造了距离，距离创造了选择。</p>
+
+    <h2>日常生活中的正念</h2>
+    <p>正式的静坐练习有其价值，但真正的考验在日常生活的每一个缝隙中。你如何刷牙？是在心不在焉地想着待办事项，还是在感受牙刷在牙齿上的每一次接触？你如何吃饭？是在屏幕前机械地吞咽，还是在品尝每一口食物的质地、温度和味道？你如何走路？是在奔向某个目的地，还是在感受每一步中脚掌与地面的接触、腿部肌肉的收缩、空气在皮肤上的流动？</p>
+    <p>这些不是浪漫化的生活美学。它们是训练觉察神经回路的实际方法。每一次你选择把注意力带回当下正在做的事——无论多么平凡——你都在强化大脑的"注意力肌肉"。这个肌肉是通用的。在洗碗时培养的专注，会在重要的商务对话中自动可用。在吃苹果时培养的感官敏锐度，会在创作时自动涌现。觉察是一种可迁移的能力，而日常生活就是最丰富的训练场。</p>
+
+    <div class="ad-unit ad-in-content">
+      <p>文中广告位</p>
+    </div>
+
+    <h3>1. 单任务时刻</h3>
+    <p>从一件小事开始：选一项你日常做的活动，承诺在接下来的七天里只做这一件事。不刷手机，不听播客，不构思回复。只是做这件事，并让你的注意力停留于它的全部感官细节。洗盘子时注意水流的温度、泡沫的质地、碗碟的重量。叠衣服时注意布料的触感、折痕的形状、颜色的排列。这些时刻看似微不足道，但它们是觉察能力的基本构件。</p>
+
+    <h3>2. 过渡仪式</h3>
+    <p>生活中充满了过渡——从家到公司、从会议到会议、从白天到夜晚。这些过渡通常被匆忙地跳过，但它们实际上是绝佳的觉察锚点。在每个过渡点，停下来三次深呼吸。不需要闭上眼睛，不需要特殊姿势，只需要把注意力带到呼吸上，三口气，然后进入下一个情境。这个微小的仪式会在你的一天中创造出数十个觉察的"逗号"，防止你滑入自动导航模式。</p>
+
+    <h3>3. 情绪标签法</h3>
+    <p>当强烈情绪升起时，不要立即反应。先在心里给它命名——不是宽泛的"我感觉很糟"，而是尽可能精确的"这是焦虑，伴随着胸口的发紧和呼吸的加快"。命名的精确性本身就是觉察。语言是注意力的脚手架，当你能用词语描述一种体验时，你就在对它建立某种程度的主权。标签不需要复杂。"愤怒"就够了。"悲伤"就够了。关键是停顿和命名的动作，而不是标签的完美。</p>
+
+    <h2>觉察的更深层次</h2>
+    <p>当日常觉察深化到一定程度，它会自然引向更根本的问题：谁在觉察？那个能够观察一切——念头、情绪、身体感觉——的"观察者"本身，是什么？这不是一个哲学谜题，而是可以通过持续的觉察练习直接经验的现实。</p>
+    <p>在深入觉察的状态中，你会发现观察者无法被对象化。你可以观察念头，但你无法"观察"那个正在观察的东西——因为任何你观察的东西都变成了对象，而观察者永远作为主体而存在。这不是一个需要解决的悖论，而是一个需要活出的洞见。那个无法被对象化的觉察本身，是你存在的最深层基底。它不是你的某个部分——它是所有部分得以被感知的容器。</p>
+    <p>这种认识不会自动让你成为一个圣人。你仍然会犯错，仍然会脆弱，仍然会经历人类所有的复杂情感。但底层的关系改变了。你不再是一个被念头和情绪推来搡去的角色，你变成了那个剧场本身——戏剧依然在台上上演，但你知道你不是戏剧。这种"背景意识"的稳定性，是所有真正的心理韧性的来源。</p>
+
+    <div class="pull-quote">
+      "当你在溪流中放下小船，小船会随波逐流。但当你看向两岸，你会发现自己并没有随船而去。觉察就是两岸，念头就是小船。"
+      <cite>—— 改编自铃木俊隆禅师</cite>
+    </div>
+
+    <h2>为什么这一切重要</h2>
+    <p>在一个被信息洪流淹没、被即时满足驯化、被算法推荐塑造注意力的时代，觉察可能是最后的反抗形式。它不是通过逃离世界来实现的，而是在世界中保持清醒。它是你能够在任何广告轰炸、任何通知诱惑、任何情绪操控面前保持自主选择的能力。觉察不是让你变得冷漠或疏离，恰恰相反——它让你更深刻地感受一切，同时不被任何东西卷走。</p>
+    <p>最终的觉察，是对生命本身的觉察。意识到每一个当下都是不可重复的。意识到你正在经历的这一刻——阅读这些文字的此刻——永远不会再来。这种意识会自动产生一种近乎神圣的重视。不是焦虑，不是抓紧，而是一种温柔的珍惜。你放慢脚步。你真正倾听。你不再把任何人、任何事当作理所当然。</p>
+    <p>这才是正念App永远无法给你的东西。它不在任何订阅服务里，不在任何排行榜上，不在任何推荐算法中。它只存在于你愿意停止寻找、开始存在的地方。关掉屏幕。闭上眼睛。或者不要闭——只是看。只是听。只是感受。觉察已经在那里了。它一直都在。你不需要下载它。你只需要记得去注意。</p>
+
+    <div class="key-takeaways">
+      <h2>🎯 核心要点</h2>
+      <ul>
+        <li><strong>你的手机无法教你临在。</strong>商业化的正念App是有用的减压工具，但它们剥离了觉察最深层的维度：看清实相的本质。</li>
+        <li><strong>觉察不是放松、不是清空念头、不是逃避现实。</strong>它的目的是清晰，不是舒适。它照亮一切——包括你一直在逃避的东西。</li>
+        <li><strong>身体是你通往当下的唯一路径。</strong>重新连接身体的感官信号，你就获得了一种不需要语言的情绪理解能力和早期预警系统。</li>
+        <li><strong>你不是你的念头。</strong>觉察让你看见念头来来去去，而你——那个观察者——保持不变。这种距离创造选择，选择创造自由。</li>
+        <li><strong>日常生活是最好的训练场。</strong>洗碗、走路、吃饭——每一个平凡时刻都可以成为觉察练习。正式冥想是辅助，日常正念是主菜。</li>
+      </ul>
+    </div>
+
+    <div class="share-section">
+      <span>分享这篇文章：</span>
+      <div class="share-btns">
+        <a href="https://twitter.com/intent/tweet?text=%E6%AD%A3%E5%BF%B5%E8%B6%85%E8%B6%8AApp%EF%BC%9A%E7%9C%9F%E6%AD%A3%E7%9A%84%E8%A7%89%E5%AF%9F%E6%98%AF%E4%BB%80%E4%B9%88&url=https://elevatemind.io/articles/mindfulness-beyond-apps.html" class="share-btn" target="_blank" title="分享到 X">𝕏</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://elevatemind.io/articles/mindfulness-beyond-apps.html" class="share-btn" target="_blank" title="分享到 Facebook">f</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://elevatemind.io/articles/mindfulness-beyond-apps.html" class="share-btn" target="_blank" title="分享到 LinkedIn">in</a>
+        <a href="https://reddit.com/submit?url=https://elevatemind.io/articles/mindfulness-beyond-apps.html&title=%E6%AD%A3%E5%BF%B5%E8%B6%85%E8%B6%8AApp%EF%BC%9A%E7%9C%9F%E6%AD%A3%E7%9A%84%E8%A7%89%E5%AF%9F%E6%98%AF%E4%BB%80%E4%B9%88" class="share-btn" target="_blank" title="分享到 Reddit">r</a>
+      </div>
+    </div>
+
+    <div class="related-articles">
+      <h2>相关文章</h2>
+      <div class="related-grid">
+        <a href="emotional-regulation.html" class="related-card">
+          <h4>情绪调控：没人教过你的超级能力</h4>
+          <p>每一次重大抉择、每一场艰难对话、每一个你真正定义自己的时刻背后的隐形力量。</p>
+        </a>
+        <a href="shadow-self-integration.html" class="related-card">
+          <h4>阴影整合：为什么你必须拥抱黑暗才能完整</h4>
+          <p>你拒绝看见的一切不会消失——它会生长出牙齿。荣格的阴影工作，完整解析。</p>
+        </a>
+        <a href="art-of-solitude.html" class="related-card">
+          <h4>独处的艺术：在喧嚣中找回内在宁静</h4>
+          <p>在一个从未如此连接又如此孤独的时代，独处不再是奢侈，而是生存的必需技能。</p>
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <div class="container">
+    <div class="ad-unit ad-in-content" style="max-width:720px;margin:0 auto 40px;">
+      <p>文中广告位</p>
+    </div>
+  </div>
+
+  <section class="container">
+    <div class="newsletter-section">
+      <h3>一个改变你人生的思想，每周日送达</h3>
+      <p>加入 50,000+ 拒绝梦游般生活的觉醒者。没有噪音。没有废话。只有精炼的智慧。</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="输入你的邮箱，开启觉醒之旅" required>
+        <button type="submit" class="btn btn-primary">免费订阅</button>
+      </form>
+      <p style="font-size:0.75rem;color:var(--color-text-muted);margin-top:12px;">绝无垃圾邮件。随时取消订阅。来自 120+ 个国家的思想者已加入。</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../" class="logo"><span class="logo-mark">◈</span><span>ElevateMind</span></a>
+          <p>全球觉醒者的精神家园。我们策划关于意识、财富、使命和人类潜能的变革性思想。</p>
+          <div class="share-btns" style="margin-top:16px;">
+            <a href="https://twitter.com/elevatemind" class="share-btn" target="_blank">𝕏</a>
+            <a href="https://facebook.com/elevatemind" class="share-btn" target="_blank">f</a>
+            <a href="https://linkedin.com/company/elevatemind" class="share-btn" target="_blank">in</a>
+            <a href="https://reddit.com/r/elevatemind" class="share-btn" target="_blank">r</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>探索</h4>
+          <a href="../categories/conscious-self.html">自我认知</a>
+          <a href="../categories/wealth-architecture.html">财富架构</a>
+          <a href="../categories/career-purpose.html">职业使命</a>
+          <a href="../categories/relationship-dynamics.html">关系智慧</a>
+          <a href="../categories/high-dimensional.html">高维思维</a>
+        </div>
+        <div class="footer-links">
+          <h4>资源</h4>
+          <a href="../deep-dives/">深度专题</a>
+          <a href="../categories/life-guides.html">生活指南</a>
+          <a href="../books/">书籍摘要</a>
+          <a href="../audio/">音频洞见</a>
+          <a href="../search.html">搜索</a>
+        </div>
+        <div class="footer-links">
+          <h4>关于</h4>
+          <a href="../about.html">关于我们</a>
+          <a href="../advertise.html">广告合作</a>
+          <a href="../membership.html">会员计划</a>
+          <a href="../privacy.html">隐私政策</a>
+          <a href="../contact.html">联系我们</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 ElevateMind。保留所有权利。为全球觉醒者精心打造。</p>
+        <p>用 ◈ 为拒绝平庸的人而制作。</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="ad-sticky" id="sticky-ad">
+    <div style="display:flex;align-items:center;gap:16px;">
+      <span style="font-size:0.75rem;color:var(--color-text-muted);">广告</span>
+      <span style="font-size:0.85rem;">🚀 开启你的在线事业——免费大师课程</span>
+      <button class="btn btn-primary" style="padding:6px 14px;font-size:0.75rem;">了解更多</button>
+    </div>
+    <button id="close-sticky-ad" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);padding:4px;color:var(--color-text-muted);">✕</button>
+  </div>
+
+  <div class="cookie-banner" id="cookie-banner">
+    <p>🍪 我们使用 Cookie 来提升你的浏览体验。继续使用即表示你同意我们的<a href="../privacy.html">隐私政策</a>。</p>
+    <button class="btn btn-primary" id="cookie-accept" style="padding:8px 20px;">同意并继续</button>
+  </div>
+
+  <button class="scroll-top" id="scroll-top">↑</button>
+  <script src="../js/main.js"></script>
+</body>
+</html>

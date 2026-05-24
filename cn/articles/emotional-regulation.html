@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>情绪调控：没人教过你的超级能力 | ElevateMind</title>
+  <meta name="description" content="情绪调控是隐藏在每一次重大抉择、每一场艰难对话、每一个你真正做自己的时刻背后的隐形力量。这是从未有人教过你的超级能力。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;900&family=Noto+Serif+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    body { font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Noto Serif SC', Georgia, serif; }
+    .article-hero { padding: 40px 0 20px; text-align: center; }
+    .article-hero h1 { max-width: 800px; margin: 0 auto 16px; }
+    .article-hero .article-meta-bar { display: flex; justify-content: center; gap: 24px; font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 24px; }
+    .article-hero img { width: 100%; max-width: 1200px; height: 500px; object-fit: cover; border-radius: var(--radius-lg); margin: 0 auto; display: block; }
+    .article-content { max-width: 720px; margin: 0 auto; padding: 40px 24px; }
+    .article-content h2 { font-size: 1.5rem; margin-top: 48px; margin-bottom: 16px; }
+    .article-content h3 { font-size: 1.2rem; margin-top: 32px; margin-bottom: 12px; color: var(--color-accent); }
+    .article-content p { margin-bottom: 20px; font-size: 1.05rem; line-height: 1.8; }
+    .pull-quote {
+      border-left: 4px solid var(--color-accent);
+      padding: 20px 28px;
+      margin: 32px 0;
+      background: var(--color-accent-light);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.25rem;
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--color-text);
+    }
+    .pull-quote cite {
+      display: block; margin-top: 12px; font-size: 0.85rem; font-style: normal;
+      font-family: 'Noto Sans SC', sans-serif; color: var(--color-text-secondary);
+    }
+    .key-takeaways {
+      background: var(--color-surface); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: 32px; margin: 48px 0;
+    }
+    .key-takeaways h2 { margin-top: 0; font-size: 1.3rem; }
+    .key-takeaways ul { list-style: disc; padding-left: 24px; margin-top: 16px; }
+    .key-takeaways li { margin-bottom: 10px; font-size: 0.95rem; line-height: 1.7; }
+    .share-section { display: flex; align-items: center; gap: 16px; margin: 40px 0; padding-top: 24px; border-top: 1px solid var(--color-border); }
+    .share-section span { font-size: 0.85rem; font-weight: 600; color: var(--color-text-secondary); }
+    .related-articles { margin: 48px 0; }
+    .related-articles h2 { font-size: 1.3rem; margin-bottom: 20px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .related-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 20px; transition: all 0.3s; }
+    .related-card:hover { border-color: var(--color-accent); transform: translateY(-2px); }
+    .related-card h4 { font-size: 0.95rem; margin-bottom: 8px; }
+    .related-card p { font-size: 0.8rem; color: var(--color-text-secondary); line-height: 1.5; }
+    .reading-time-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--color-accent-light); color: var(--color-accent); padding: 4px 12px; border-radius: 100px; font-size: 0.75rem; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="read-progress" id="read-progress"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../" class="logo"><span class="logo-mark">◈</span><span>ElevateMind</span></a>
+      <nav class="nav-links">
+        <a href="../">首页</a>
+        <a href="../categories/conscious-self.html" class="active">自我认知</a>
+        <a href="../categories/wealth-architecture.html">财富架构</a>
+        <a href="../categories/career-purpose.html">职业使命</a>
+        <a href="../categories/relationship-dynamics.html">关系智慧</a>
+        <a href="../categories/trailblazers.html">思想巨擘</a>
+        <a href="../categories/high-dimensional.html">高维思维</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn-ghost" id="theme-toggle" title="切换深色模式">🌙</button>
+        <button class="btn btn-primary">订阅</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="article-hero">
+    <div class="container">
+      <div class="hero-tag">🧠 自我认知</div>
+      <h1>情绪调控：没人教过你的超级能力</h1>
+      <div class="article-meta-bar">
+        <span class="reading-time-badge">📖 约10分钟阅读</span>
+        <span>📅 2026年5月24日</span>
+        <span>✍️ ElevateMind 编辑部</span>
+      </div>
+      <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&h=600&fit=crop" alt="在沉思中保持平静的人">
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="ad-unit ad-header" style="margin:24px auto;max-width:1200px;">
+      <p>728×90 头部广告位</p>
+    </div>
+  </div>
+
+  <article class="article-content">
+    <p class="lead" style="font-size:1.2rem;color:var(--color-text-secondary);line-height:1.9;margin-bottom:32px;">
+      你可以拥有全场最高的智商，最耀眼的学历，最锋利的战略头脑。但如果你在压力之下无法稳住自己的情绪状态，这一切在真正重要的时刻都不会显现。情绪调控是每一次高风险决策、每一场艰难对话、每一个你真正定义自己是谁的时刻背后的隐形架构。它从未出现在任何一张课表上，却是决定你人生走向最深层的变量。
+    </p>
+
+    <h2>那堂从未上过的课</h2>
+    <p>想想你在学校真正学过的东西。代数。语法。元素周期表。巴拉圭的首都。再想想你从未学过的东西：如何在愤怒时不毁掉一段关系。如何在悲伤时不把它淹没在无尽的消遣里。如何在焦虑时不让它劫持你的判断。如何在渴望时不被每一次冲动牵着走。</p>
+    <p>情绪调控之所以不在课表上，是因为编写课表的人自己也不懂。他们把情绪当作"真正的"教育之外的附属品——柔软、主观、不够严肃。但神经科学如今已经证实了哲学家和修行者几千年来所知道的：调控情绪状态的能力，是比原始智力、社会经济背景甚至天赋更强大的人生预测指标。宾夕法尼亚大学一项长达20年的纵向研究发现，儿童时期的情绪调控能力对成年后的财务稳定、关系质量和身体健康的预测准确性，远超过学业成就。</p>
+    <p>原因很简单。不受调控的情绪会扭曲你的感知。当你愤怒时，你会在不存在威胁的地方看见威胁。当你焦虑时，你会在中性的情境中读出危险。当你迷恋时，你会在有缺陷的人身上看见完美。当你沮丧时，你会在本该努力的地方看见徒劳。你的情绪状态就是你解读现实的透镜——而一块脏透镜会让一切看起来都肮脏。</p>
+
+    <div class="pull-quote">
+      "在刺激与反应之间有一个空间。在那个空间里，有我们选择回应方式的权力。在我们的回应中，蕴藏着我们的成长和自由。"
+      <cite>—— 维克多·弗兰克尔，精神病学家与大屠杀幸存者</cite>
+    </div>
+
+    <h2>情绪调控到底是什么</h2>
+    <p>情绪调控不是压抑。它不是板着脸强撑，不是"我没事"时的强颜欢笑，不是把一切都咽进肚子里。压抑不是调控——它只是拖延。而被拖延的情绪会在你的身体里利滚利，最终以各种症状索取代价：失眠、偏头痛、消化紊乱、自身免疫病发作、惊恐发作、抑郁。</p>
+    <p>真正的情绪调控是<strong>完整地感受一种情绪，同时选择你对它的回应</strong>。这是感受愤怒与表现愤怒之间的区别。感受恐惧与被恐惧支配之间的区别。感受渴望与对每一次冲动采取行动之间的区别。情绪本身不是问题。紧随其后自动发生的、未经审视的行为才是。</p>
+    <p>这种能力由三个可培养的组件构成：</p>
+    <p><strong>1. 内感受觉察：</strong>在情绪完全绽放之前，捕捉到它早期的生理信号的能力。愤怒来临前收紧的下颌。焦虑来临前变得浅快的呼吸。温柔来临前胸膛的暖意。大多数人在注意到这些信号之前，情绪早已劫持了他们的行为。</p>
+    <p><strong>2. 认知重评：</strong>实时地重新框定一个情境的意义，从而改变它所产生的情绪反应。同样一场堵车，既可以引爆暴怒，也可以变成一个听完一章有声书的机会——区别只在于你对自己讲述的故事。</p>
+    <p><strong>3. 反应调节：</strong>选择一种与你的价值观而非情绪状态对齐的行为回应。这是最后的闸门——在感受与行动之间，主权要么诞生，要么死亡。</p>
+
+    <h2>触发背后的神经科学</h2>
+    <p>要理解调控，首先要理解你在调控什么。情绪不是抽象的头脑事件——它们是始于杏仁核的神经化学级联。杏仁核是大脑深处一个杏仁大小的结构，功能相当于情绪烟雾报警器。它不会思考，它只会反应。在感知到威胁的毫秒之内，它向丘脑发号施令，启动战或逃反应：肾上腺素、皮质醇、心率加快、注意力收窄、攻击性或逃避性冲动全面爆发。</p>
+    <p>问题是，杏仁核是古老的。它为充满捕食者和肉体危险的世界而演化。它无法区分一头冲过来的狮子和一封含沙射影的邮件。它对社交威胁——拒绝、羞辱、批评——的反应强度，和对肉体攻击的反应如出一辙。这就是为什么同事一句刺耳的评论可以毁掉你整个下午——你的身体把它当作了生存威胁。</p>
+    <p>前额叶皮层——理性思维、长期规划和冲动控制的中枢——在进化上更新，神经传导上更慢。在正常情况下，它可以调节杏仁核的信号。但在强烈的情绪唤醒下，杏仁核实际上会劫持前额叶皮层。血流从理性大脑转移到反应大脑。你在一种非常真实的神经学意义上，变得更笨了。更缺乏耐心。更缺乏创造力。更不像<strong>你自己</strong>。</p>
+    <p>情绪调控就是让这个前额叶皮层保持在线、长到足以让你做出选择的练习。它不是消除情绪——那既不可能也不可取。它是缩短情绪激活与意识回应之间的鸿沟。那个鸿沟，就是自由栖息的地方。</p>
+
+    <div class="pull-quote">
+      "当我们不能再改变一个情境时，我们就被挑战去改变自己。情绪调控就是那个改变的引擎。"
+      <cite>—— 改编自维克多·弗兰克尔</cite>
+    </div>
+
+    <h2>真正有效的工具箱</h2>
+    <p>情绪调控是一种技能，不是一种特质。和任何技能一样，它会随着刻意练习而提升。以下是实证支持最强的几种技术。</p>
+
+    <h3>1. 生理重置法</h3>
+    <p>当杏仁核被点燃时，你的身体会改变。呼吸变得浅快。肌肉紧绷。周边视野收窄。你可以直接改变生理来逆转这条级联。最强大的工具是延长呼气。吸气四拍，呼气八拍。迷走神经——主要的副交感神经通路——会被缓慢深长的呼吸激活，尤其是在呼气过程中。三轮4-8呼吸可以在60秒内可测量地降低心率和皮质醇。它不会解决触发你的问题，但它会恢复你清晰思考问题的能力。</p>
+
+    <h3>2. 命名即驯服</h3>
+    <p>UCLA的马修·利伯曼的研究表明，仅仅给一种情绪状态贴上标签——用语言描述它——就能降低杏仁核的激活。这就是写日记起作用的原因。这就是心理治疗起作用的原因。这就是为什么当你大声说出"我现在感到焦虑"时，焦虑会变得稍微可控一些。命名的动作招募了前额叶皮层，从而抑制了杏仁核的警报信号。你不需要复杂的词汇。"我很生气"就够了。"这是恐惧"就够了。标签的精确性远不如命名这个行为本身重要。</p>
+
+    <h3>3. 90秒法则</h3>
+    <p>神经科学家吉尔·泰勒·博尔特发现，情绪反应的化学成分——神经递质和激素的洪流——大约持续90秒。在那之后，情绪之所以持续，只是因为你<strong>用念头重新触发了它</strong>。这意味着，如果你能在90秒内不带叙事地观察一种情绪，它就会像天气一样穿过你。练习不是压抑情绪，而是观看它而不参与维持它的内心故事。它升起。它到达顶峰。它落下。你仍在。</p>
+
+    <div class="ad-unit ad-in-content">
+      <p>文中广告位</p>
+    </div>
+
+    <h3>4. 实时认知重评</h3>
+    <p>你对自己讲述的关于一个事件的故事，决定了你对它的情绪反应。同一件事——求职被拒、分手、当众出丑——既可以触发毁灭，也可以带来释然，取决于你赋予它的意义。认知重评是有意识地练习寻找一个替代解释。不是强行的正面粉饰，而是一个更准确、更完整的故事。"她拒绝了我"变成"她不是对的人，现在我可以自由地去找到那个对的人。""我失败了"变成"我得到了关于什么行不通的信息，而这是找到什么能行的必经之路。"这不是妄想。这是视角。而视角，是唯一能够改变你对事实的感受的东西。</p>
+
+    <h3>5. 基于价值观的回应延迟</h3>
+    <p>情绪调控的最高级形式不是管理情绪，而是管理情绪之后的行为。这要求你对自身价值观有足够清晰的认知，能把它们当作过滤器。愤怒时，你可能珍视善意。焦虑时，你可能珍视勇气。嫉妒时，你可能珍视慷慨。情绪变成了一个信号——"有重要的事情正在发生"——但价值观变成了决策标准。情绪提供信息。价值观做出决定。</p>
+
+    <h2>更深的架构</h2>
+    <p>这些技术可以在当下起作用。但持久的情绪调控需要更深层的东西：重组你与情绪本身的关系。大多数人要么害怕自己的情绪，要么被它们控制。两者都不是自由。目标是变成一个主人——一个能够欢迎任何情绪、给它一个座位、听听它要说什么、然后决定是否采纳它建议的人。</p>
+    <p>每一种情绪都携带着信息。愤怒告诉你边界被侵犯了。焦虑告诉你某件你在乎的事情正处于风险之中。悲伤告诉你某种珍贵的东西已经失去。嫉妒告诉你你真正想要什么但害怕去追逐。无聊告诉你当前的活动与你的能力不对齐。如果你压抑情绪，你就压抑了它们的信息。如果你盲目地按照它们行动，你就变得混乱。如果你倾听它们然后选择，你就成为主权者。</p>
+    <p>这就是为什么情绪调控是其他所有技能的基础。你无法好好谈判，如果愤怒让你变得攻击性或畏缩。你无法好好领导，如果焦虑让你变得控制欲强或逃避。你无法好好去爱，如果对被拒绝的恐惧让你变得黏人或疏离。你无法好好创造，如果沮丧让你放弃或 obsess。人类卓越成就的每一个领域都需要同一种底层能力：强烈地感受，明智地选择。</p>
+
+    <div class="pull-quote">
+      "最高形式的智慧，是不带评判地观察自己的能力。从那种观察中，改变的能力才会诞生。"
+      <cite>—— 吉杜·克里希那穆提，哲学家</cite>
+    </div>
+
+    <h2>接下来是什么</h2>
+    <p>情绪调控不是一个目的地。它是一种练习。你不会到达一个没有任何情绪扰乱你的状态。你会到达一个状态，在那里扰乱不再决定你的行为。在那里你可以感受暴怒而依然保持善意。感受恐惧而依然保持在场。感受悲痛而依然保持敞开。</p>
+    <p>从一种技术开始。当你注意到紧张时，练习4-8呼吸。当情绪升起时，大声命名它们。在做出激烈反应之前，等待90秒。这些都是微小的行动，但它们会积累。每一次你选择调控而非反应，你都在强化下一次调控更容易的神经通路。大脑是可塑的。能力会生长。</p>
+    <p>而回报远远超越你自己。一个能够调控情绪的人不仅仅是少受些苦。他们让身边的人感到更安全。他们的存在变得稳定。他们的关系变得可信。他们的领导变得鼓舞人心。他们的创造变得无畏。情绪调控不是自助。它是你能给这个世界最主要的礼物——在一个已经忘记如何做到这些的文化中，提供一种平静、清晰、有意识的存在。</p>
+
+    <div class="key-takeaways">
+      <h2>🎯 核心要点</h2>
+      <ul>
+        <li><strong>情绪调控比智商更能预测人生结果。</strong>长期研究表明，管理情绪状态的能力与财务稳定、关系质量和身体健康的相关性，远超过学业成就。</li>
+        <li><strong>调控不是压抑。</strong>真正的情绪调控意味着完整地感受一种情绪，同时选择你的回应方式——而不是把它塞下去或假装它不存在。</li>
+        <li><strong>情绪的化学成分只持续90秒。</strong>在那之后，它之所以持续，只是因为你用念头重新触发了它。不带叙事地观察90秒，让它自然流过。</li>
+        <li><strong>命名可以降低杏仁核激活。</strong>仅仅描述一种情绪状态——"我很焦虑"、"这是愤怒"——就能招募前额叶皮层，抑制情绪警报信号。</li>
+        <li><strong>基于价值观的回应延迟是调控的最高形式。</strong>把情绪当作信息，但让你的价值观决定行为。这创造主权，而非反应性。</li>
+      </ul>
+    </div>
+
+    <div class="share-section">
+      <span>分享这篇文章：</span>
+      <div class="share-btns">
+        <a href="https://twitter.com/intent/tweet?text=%E6%83%85%E7%BB%AA%E8%B0%83%E6%8E%A7%EF%BC%9A%E6%B2%A1%E4%BA%BA%E6%95%99%E8%BF%87%E4%BD%A0%E7%9A%84%E8%B6%85%E7%BA%A7%E8%83%BD%E5%8A%9B&url=https://elevatemind.io/articles/emotional-regulation.html" class="share-btn" target="_blank" title="分享到 X">𝕏</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://elevatemind.io/articles/emotional-regulation.html" class="share-btn" target="_blank" title="分享到 Facebook">f</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://elevatemind.io/articles/emotional-regulation.html" class="share-btn" target="_blank" title="分享到 LinkedIn">in</a>
+        <a href="https://reddit.com/submit?url=https://elevatemind.io/articles/emotional-regulation.html&title=%E6%83%85%E7%BB%AA%E8%B0%83%E6%8E%A7%EF%BC%9A%E6%B2%A1%E4%BA%BA%E6%95%99%E8%BF%87%E4%BD%A0%E7%9A%84%E8%B6%85%E7%BA%A7%E8%83%BD%E5%8A%9B" class="share-btn" target="_blank" title="分享到 Reddit">r</a>
+      </div>
+    </div>
+
+    <div class="related-articles">
+      <h2>相关文章</h2>
+      <div class="related-grid">
+        <a href="mindfulness-beyond-apps.html" class="related-card">
+          <h4>正念觉醒：超越冥想APP的深层存在之道</h4>
+          <p>你的手机无法教你临在。真正的正念比游戏化版本更混乱、更艰难，也 infinitely 更值得。</p>
+        </a>
+        <a href="shadow-self-integration.html" class="related-card">
+          <h4>阴影整合：为什么你必须拥抱黑暗才能完整</h4>
+          <p>你拒绝看见的一切不会消失——它会生长出牙齿。荣格的阴影工作，完整解析。</p>
+        </a>
+        <a href="reclaiming-sensation.html" class="related-card">
+          <h4>感官复苏：如何从屏幕麻木中找回感觉</h4>
+          <p>你的屏幕已经变成了现实的替代品。这里是重新夺回人类完整感官光谱的方法。</p>
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <div class="container">
+    <div class="ad-unit ad-in-content" style="max-width:720px;margin:0 auto 40px;">
+      <p>文中广告位</p>
+    </div>
+  </div>
+
+  <section class="container">
+    <div class="newsletter-section">
+      <h3>一个改变你人生的思想，每周日送达</h3>
+      <p>加入 50,000+ 拒绝梦游般生活的觉醒者。没有噪音。没有废话。只有精炼的智慧。</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="输入你的邮箱，开启觉醒之旅" required>
+        <button type="submit" class="btn btn-primary">免费订阅</button>
+      </form>
+      <p style="font-size:0.75rem;color:var(--color-text-muted);margin-top:12px;">绝无垃圾邮件。随时取消订阅。来自 120+ 个国家的思想者已加入。</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../" class="logo"><span class="logo-mark">◈</span><span>ElevateMind</span></a>
+          <p>全球觉醒者的精神家园。我们策划关于意识、财富、使命和人类潜能的变革性思想。</p>
+          <div class="share-btns" style="margin-top:16px;">
+            <a href="https://twitter.com/elevatemind" class="share-btn" target="_blank">𝕏</a>
+            <a href="https://facebook.com/elevatemind" class="share-btn" target="_blank">f</a>
+            <a href="https://linkedin.com/company/elevatemind" class="share-btn" target="_blank">in</a>
+            <a href="https://reddit.com/r/elevatemind" class="share-btn" target="_blank">r</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>探索</h4>
+          <a href="../categories/conscious-self.html">自我认知</a>
+          <a href="../categories/wealth-architecture.html">财富架构</a>
+          <a href="../categories/career-purpose.html">职业使命</a>
+          <a href="../categories/relationship-dynamics.html">关系智慧</a>
+          <a href="../categories/high-dimensional.html">高维思维</a>
+        </div>
+        <div class="footer-links">
+          <h4>资源</h4>
+          <a href="../deep-dives/">深度专题</a>
+          <a href="../categories/life-guides.html">生活指南</a>
+          <a href="../books/">书籍摘要</a>
+          <a href="../audio/">音频洞见</a>
+          <a href="../search.html">搜索</a>
+        </div>
+        <div class="footer-links">
+          <h4>关于</h4>
+          <a href="../about.html">关于我们</a>
+          <a href="../advertise.html">广告合作</a>
+          <a href="../membership.html">会员计划</a>
+          <a href="../privacy.html">隐私政策</a>
+          <a href="../contact.html">联系我们</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 ElevateMind。保留所有权利。为全球觉醒者精心打造。</p>
+        <p>用 ◈ 为拒绝平庸的人而制作。</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="ad-sticky" id="sticky-ad">
+    <div style="display:flex;align-items:center;gap:16px;">
+      <span style="font-size:0.75rem;color:var(--color-text-muted);">广告</span>
+      <span style="font-size:0.85rem;">🚀 开启你的在线事业——免费大师课程</span>
+      <button class="btn btn-primary" style="padding:6px 14px;font-size:0.75rem;">了解更多</button>
+    </div>
+    <button id="close-sticky-ad" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);padding:4px;color:var(--color-text-muted);">✕</button>
+  </div>
+
+  <div class="cookie-banner" id="cookie-banner">
+    <p>🍪 我们使用 Cookie 来提升你的浏览体验。继续使用即表示你同意我们的<a href="../privacy.html">隐私政策</a>。</p>
+    <button class="btn btn-primary" id="cookie-accept" style="padding:8px 20px;">同意并继续</button>
+  </div>
+
+  <button class="scroll-top" id="scroll-top">↑</button>
+  <script src="../js/main.js"></script>
+</body>
+</html>

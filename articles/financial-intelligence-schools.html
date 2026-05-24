@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Intelligence: What School Never Taught You About Money | ElevateMind</title>
+  <meta name="description" content="The most important subject was never on the syllabus. Here is what you actually need to know about money, wealth, and financial intelligence.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .article-hero { position: relative; height: 480px; overflow: hidden; }
+    .article-hero img { width: 100%; height: 100%; object-fit: cover; }
+    .article-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.2) 50%, transparent 100%); }
+    .article-hero-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 40px 24px; max-width: 1280px; margin: 0 auto; color: white; }
+    .article-hero-content .hero-tag { background: rgba(255,255,255,0.2); color: white; backdrop-filter: blur(8px); }
+    .article-hero-content h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 16px; max-width: 800px; text-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .article-hero-content .lead { color: rgba(255,255,255,0.85); max-width: 600px; font-size: 1.1rem; }
+    .article-meta-bar { display: flex; align-items: center; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--color-border); margin-bottom: 32px; font-size: 0.875rem; color: var(--color-text-secondary); }
+    .article-meta-bar .author { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+    .author-avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--color-accent); display: flex; align-items: center; justify-content: center; color: white; font-size: 0.8rem; }
+    .article-layout { display: grid; grid-template-columns: 1fr 320px; gap: 48px; }
+    .article-body { font-size: 1.05rem; line-height: 1.85; }
+    .article-body p { margin-bottom: 24px; }
+    .article-body h2 { font-size: 1.6rem; margin: 48px 0 20px; color: var(--color-text); }
+    .article-body h3 { font-size: 1.25rem; margin: 32px 0 16px; color: var(--color-text); }
+    .pull-quote { border-left: 4px solid var(--color-accent); padding: 24px 28px; margin: 36px 0; background: var(--color-accent-light); border-radius: 0 var(--radius-md) var(--radius-md) 0; font-family: var(--font-heading); font-size: 1.25rem; font-style: italic; line-height: 1.6; color: var(--color-text); }
+    .pull-quote cite { display: block; margin-top: 12px; font-family: var(--font-body); font-size: 0.85rem; font-style: normal; color: var(--color-text-secondary); }
+    .key-takeaways { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 32px; margin: 40px 0; }
+    .key-takeaways h3 { margin: 0 0 20px; font-size: 1.2rem; }
+    .key-takeaways ul { list-style: none; padding: 0; }
+    .key-takeaways li { padding: 10px 0 10px 32px; position: relative; border-bottom: 1px solid var(--color-border); }
+    .key-takeaways li:last-child { border-bottom: none; }
+    .key-takeaways li::before { content: '✓'; position: absolute; left: 0; color: var(--color-success); font-weight: 700; }
+    .social-share { display: flex; align-items: center; gap: 12px; margin: 40px 0; padding: 24px 0; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+    .social-share span { font-weight: 600; font-size: 0.9rem; margin-right: 8px; }
+    .related-articles { margin: 48px 0; }
+    .related-articles h3 { font-size: 1.3rem; margin-bottom: 20px; }
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .related-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 20px; transition: all 0.3s; }
+    .related-card:hover { border-color: var(--color-accent); transform: translateY(-2px); }
+    .related-card h4 { font-size: 0.95rem; margin-bottom: 8px; }
+    .related-card p { font-size: 0.8rem; color: var(--color-text-secondary); }
+    .reading-time { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.15); padding: 4px 12px; border-radius: 100px; font-size: 0.8rem; color: white; margin-top: 12px; }
+    .finance-highlight { background: var(--color-accent-light); border-left: 4px solid var(--color-accent); padding: 20px 24px; margin: 28px 0; border-radius: 0 var(--radius-md) var(--radius-md) 0; }
+    .finance-highlight strong { color: var(--color-accent); }
+    @media (max-width: 900px) { .article-layout { grid-template-columns: 1fr; } .related-grid { grid-template-columns: 1fr; } .article-hero { height: 360px; } }
+  </style>
+</head>
+<body>
+  <div class="read-progress" id="read-progress"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../" class="logo"><span class="logo-mark">◈</span><span>ElevateMind</span></a>
+      <nav class="nav-links">
+        <a href="../">Home</a>
+        <a href="../categories/conscious-self.html">Conscious Self</a>
+        <a href="../categories/wealth-architecture.html" class="active">Wealth</a>
+        <a href="../categories/career-purpose.html">Career</a>
+        <a href="../categories/trailblazers.html">Trailblazers</a>
+        <a href="../categories/high-dimensional.html">High-Dimensional</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn-ghost" id="theme-toggle">🌙</button>
+        <button class="btn btn-primary">Subscribe</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="article-hero">
+    <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1600&h=800&fit=crop" alt="Financial Intelligence">
+    <div class="article-hero-overlay"></div>
+    <div class="article-hero-content">
+      <div class="hero-tag">Wealth Architecture</div>
+      <h1>Financial Intelligence: What School Never Taught You About Money</h1>
+      <p class="lead">The most important subject was never on the syllabus. After sixteen years of formal education, most people graduate financially illiterate — and spend the rest of their lives paying for it.</p>
+      <div class="reading-time">⏱ 15 min read</div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 32px;">
+    <div class="article-layout">
+      <article class="article-body">
+        <div class="article-meta-bar">
+          <div class="author">
+            <div class="author-avatar">EM</div>
+            <span>ElevateMind Editorial</span>
+          </div>
+          <span>📅 May 24, 2026</span>
+          <span>👁 512 views</span>
+          <span>💬 67 comments</span>
+        </div>
+
+        <p class="lead">Consider what you were taught in school. Algebra, geometry, calculus. The periodic table. The causes of the First World War. The structure of a five-paragraph essay. All of it carefully curated, tested, and graded. Now consider what you were never taught: how interest compounds. How inflation erodes purchasing power. How to read a balance sheet. How to think about risk. How to distinguish an asset from a liability.</p>
+
+        <p>This is not an oversight. It is a design feature. The modern education system was built to produce employees, not owners. Workers, not investors. Consumers, not creators of wealth. And it has succeeded brilliantly. The average graduate enters the workforce with sophisticated analytical skills and zero financial intelligence — a dangerous combination that leaves them vulnerable to every trap the financial industry has engineered.</p>
+
+        <p>Financial intelligence is not about being rich. It is about understanding how money actually works — so you can make it work for you instead of against you. Here is what school should have taught, and what you must learn now.</p>
+
+        <h2>Lesson 1: Money Is a Language, Not a Math Problem</h2>
+
+        <p>The first misconception about financial intelligence is that it is primarily mathematical. It is not. The math of personal finance is trivially simple: earn more than you spend, invest the difference, let compound growth do the work. A twelve-year-old can understand the arithmetic.</p>
+
+        <p>What makes finance difficult is that money is a language — a symbolic system that encodes power, status, security, freedom, and fear. People do not make financial decisions based on spreadsheets. They make them based on narratives, emotions, social pressure, and unconscious scripts installed in childhood. The person who "cannot afford" to invest $500 per month somehow finds $700 for a car payment they do not need. The math is not the problem. The story is.</p>
+
+        <div class="pull-quote">
+          "It is not what you earn that determines your financial future. It is what you keep, what you grow, and what you allow to compound — and all three are decisions about behavior, not calculations about math."
+          <cite>— ElevateMind principle of financial intelligence</cite>
+        </div>
+
+        <p>Financial intelligence begins with decoding your own money story. What did your parents teach you, explicitly and implicitly, about wealth? Was money scarce or abundant? Was it discussed openly or surrounded by shame? Were rich people envied, resented, or admired? These early imprints shape adult behavior more than any economics textbook ever could. Until you understand your own programming, you are operating on autopilot — and the autopilot was installed by people who may not have known what they were doing.</p>
+
+        <h2>Lesson 2: The Difference Between Assets and Liabilities</h2>
+
+        <p>Robert Kiyosaki's simple definition remains revolutionary: an asset puts money in your pocket. A liability takes money out of your pocket. By this definition, the house you live in is a liability — it generates no income and requires constant expenditure for mortgage, maintenance, taxes, and insurance. The rental property that produces positive cash flow is an asset.</p>
+
+        <p>School teaches you to acquire liabilities and call them assets. Buy a house — it is an investment. Get a degree — it is an asset. Purchase a car — you need reliable transportation. None of this is necessarily wrong, but it is categorically confused. A house can appreciate in value, but it does not produce cash flow unless you rent it out. A degree can increase earning capacity, but it is not an asset in the accounting sense — it cannot be sold, leveraged, or liquidated. A car depreciates the moment you drive it off the lot.</p>
+
+        <div class="finance-highlight">
+          <strong>The Asset Test:</strong> If you lost your job tomorrow, which of your possessions would continue to generate income? Those are your real assets. Everything else is either a liability or a speculative holding.
+        </div>
+
+        <p>The wealthy think in balance sheets. The middle class thinks in income statements. The poor think in cash flows — week to week, survival to survival. Financial intelligence requires learning to see your own life as a balance sheet and deliberately shifting weight from the liability column to the asset column.</p>
+
+        <h2>Lesson 3: The Invisible Tax Nobody Talks About</h2>
+
+        <p>School teaches you about income tax, sales tax, and property tax. It does not teach you about inflation — the silent, relentless tax on every dollar you hold. Inflation is not a complicated economic concept. It is the gradual destruction of purchasing power by the expansion of the money supply. When central banks create new currency, the existing currency in your bank account becomes worth less. It is a wealth transfer from savers to debtors, from the cautious to the leveraged, from those who hold cash to those who hold real assets.</p>
+
+        <p>At a 3% annual inflation rate — roughly the historical average — your cash loses half its purchasing power every 23 years. At 6%, which is increasingly common in volatile economies, it loses half every 12 years. This means that the "safe" strategy of keeping money in a savings account is actually a guaranteed path to impoverishment. You are not preserving wealth. You are watching it evaporate in slow motion.</p>
+
+        <p>Financial intelligence means understanding that <strong>cash is not a store of value.</strong> It is a medium of exchange and a unit of account, but it is a terrible long-term holding. Wealth must be stored in assets that appreciate at or above the rate of monetary expansion: productive real estate, equity in growing businesses, commodities with intrinsic scarcity, and intellectual property that generates royalty income.</p>
+
+        <h2>Lesson 4: The Three Types of Income</h2>
+
+        <p>Most people understand only one type of income: earned income. You trade time for money. You work, you get paid. This is the income of employees, freelancers, and most small business owners. It is also the most heavily taxed and the most vulnerable to disruption — illness, unemployment, industry collapse, or technological obsolescence can destroy it overnight.</p>
+
+        <p>The second type is portfolio income: money generated by investments. Dividends, interest, capital gains, royalty payments. This is the income of the investor class. It is typically taxed at lower rates than earned income. It does not require your time. And it compounds — each dollar of portfolio income can be reinvested to produce more portfolio income.</p>
+
+        <p>The third type is passive income: money generated by systems you have built or acquired that require minimal ongoing effort. Rental properties with property management. Online courses that sell while you sleep. Software subscriptions that bill automatically. Affiliate relationships that produce commissions without active selling. This is the holy grail of financial intelligence — income decoupled from time.</p>
+
+        <div class="pull-quote">
+          "The wealthy do not have more time than the poor. They have more income types. While the average person relies entirely on earned income, the financially intelligent deliberately build streams of portfolio and passive income that continue whether they work or not."
+          <cite>— Wealth architecture analysis</cite>
+        </div>
+
+        <p>The trajectory of financial intelligence is a gradual shift from earned income dependence to a diversified mix of all three types. This is not about retirement. It is about optionality. The person with multiple income types can walk away from toxic jobs, take calculated risks, invest in opportunities, and weather economic storms that would devastate someone with a single paycheck.</p>
+
+        <h2>Lesson 5: Debt as Leverage or Trap</h2>
+
+        <p>School teaches a simplistic morality about debt: it is bad. Do not borrow. Pay cash. Live within your means. This advice is appropriate for people with low financial intelligence and high impulsivity. For everyone else, it is incomplete to the point of being dangerous.</p>
+
+        <p>Debt is leverage. It allows you to control assets larger than your capital base. A mortgage lets you control a $500,000 property with $100,000 down. A business loan lets you scale operations faster than organic growth would permit. Margin lets you amplify investment returns. Used intelligently, debt is a wealth accelerator.</p>
+
+        <p>But debt is also a trap. Consumer debt — credit cards, car loans, buy-now-pay-later schemes — funds liabilities with money you do not have, at interest rates that compound against you. The difference between productive debt and destructive debt is simple: <strong>productive debt buys assets that generate returns exceeding the cost of capital. Destructive debt buys liabilities that depreciate while the interest accumulates.</strong></p>
+
+        <p>Financial intelligence means being able to distinguish these categories in real time. It means using debt aggressively when it amplifies productive assets and avoiding it completely when it funds consumption. It means understanding interest rates, amortization schedules, and the difference between fixed and variable obligations. None of this was on the SAT.</p>
+
+        <h2>Lesson 6: Risk Is Not What You Think</h2>
+
+        <p>The conventional narrative presents risk as the possibility of loss. Investing in stocks is risky. Starting a business is risky. Quitting your job is risky. Keeping your money in a savings account is safe. This narrative is not just wrong — it is catastrophically inverted.</p>
+
+        <p>The greatest financial risk, over any meaningful time horizon, is <strong>not</strong> losing money in a market downturn. It is outliving your money. It is inflation eroding your purchasing power while you cling to the illusion of safety. It is the opportunity cost of decades spent in low-return holdings while compound growth passes you by. The "safe" strategy is often the riskiest strategy of all — it just distributes the risk across time, where it is harder to see.</p>
+
+        <p>Financial intelligence requires redefining risk. Real risk is permanent loss of capital, not temporary volatility. A diversified portfolio of quality assets will fluctuate in value — sometimes dramatically — but historically recovers and grows. Cash in a bank account does not fluctuate, but it is guaranteed to lose purchasing power. Which is riskier over a thirty-year horizon?</p>
+
+        <div class="finance-highlight">
+          <strong>The Risk Paradox:</strong> The investments that feel safest (cash, bonds) often produce the worst long-term outcomes. The investments that feel most dangerous (equities, real estate) historically produce the best outcomes for patient holders. Your nervous system was designed to detect immediate threats, not gradual erosion.
+        </div>
+
+        <h2>Lesson 7: The Psychology of Wealth Accumulation</h2>
+
+        <p>Even people who understand all of the above often fail to build wealth because they do not understand the psychology of accumulation. Wealth is not built by dramatic wins. It is built by boring consistency — automated transfers, regular investing, lifestyle restraint, and the patience to let compounding work.</p>
+
+        <p>The human brain is not wired for this. We are designed for immediate gratification, social comparison, and loss aversion. We feel the pain of a $100 loss more intensely than the pleasure of a $100 gain. We spend more when we use credit cards than when we use cash. We buy high and sell low because we are driven by fear and greed, not by strategy. Every cognitive bias that helped our ancestors survive on the savanna works against us in modern financial markets.</p>
+
+        <p>Financial intelligence means building systems that protect you from yourself. Automated savings so you never see the money. Investment accounts that are harder to access than checking accounts. Pre-commitment strategies that remove decision-making from moments of emotional arousal. You cannot out-willpower your own psychology indefinitely. You must architect around it.</p>
+
+        <h2>What to Do With This Knowledge</h2>
+
+        <p>Financial intelligence is not a destination. It is a practice — a continuous process of learning, applying, reviewing, and adjusting. Here is where to start:</p>
+
+        <p><strong>Audit your money story.</strong> Write down everything you believe about money, where those beliefs came from, and whether they serve you. You cannot change what you cannot name.</p>
+
+        <p><strong>Learn to read financial statements.</strong> Your own bank statements, investment reports, and eventually the statements of businesses you might invest in. Financial literacy is like language literacy — the more you read, the more fluent you become.</p>
+
+        <p><strong>Build your first passive income stream.</strong> It does not need to replace your salary. It needs to prove to you that money can flow without your direct labor. This psychological shift is more important than the dollar amount.</p>
+
+        <p><strong>Protect against inflation.</strong> Hold cash only for liquidity and emergencies. Store long-term wealth in assets with scarcity and productive capacity. Let your money work while you sleep.</p>
+
+        <p><strong>Automate wealth building.</strong> Set up automatic transfers to investment accounts the day after payday. Pay yourself first — not with discipline, but with systems. The best financial decision is the one you do not have to make.</p>
+
+        <div class="key-takeaways">
+          <h3>🔑 Key Takeaways</h3>
+          <ul>
+            <li><strong>Money is a language of behavior, not a math problem.</strong> Financial decisions are driven by emotion, narrative, and unconscious programming — not spreadsheets.</li>
+            <li><strong>Know the difference between assets and liabilities.</strong> An asset puts money in your pocket. A liability takes money out. Most "assets" people buy are actually liabilities.</li>
+            <li><strong>Inflation is the invisible tax on cash.</strong> Saving money in bank accounts guarantees the erosion of purchasing power. Wealth must be stored in appreciating, productive assets.</li>
+            <li><strong>Diversify your income types.</strong> Relying solely on earned income is dangerous. Build portfolio income and passive income for optionality and resilience.</li>
+            <li><strong>Debt is leverage or trap — know which.</strong> Productive debt buys assets that generate returns above the cost of capital. Destructive debt buys depreciating liabilities.</li>
+            <li><strong>"Safe" strategies are often the riskiest long-term.</strong> Cash feels secure but guarantees loss to inflation. Volatile assets feel dangerous but historically build wealth.</li>
+            <li><strong>Build systems, not willpower.</strong> Automate savings, make investments hard to access, and remove emotional decision-making from your financial life.</li>
+          </ul>
+        </div>
+
+        <div class="ad-unit ad-in-content">
+          <p>Native In-Content Ad — Sponsored Article / Affiliate Recommendation</p>
+        </div>
+
+        <div class="social-share">
+          <span>Share this insight:</span>
+          <a href="https://twitter.com/intent/tweet?text=Financial%20Intelligence%3A%20What%20School%20Never%20Taught%20You%20About%20Money&url=https://elevatemind.io/articles/financial-intelligence-schools.html" class="share-btn" target="_blank">𝕏</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://elevatemind.io/articles/financial-intelligence-schools.html" class="share-btn" target="_blank">f</a>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://elevatemind.io/articles/financial-intelligence-schools.html" class="share-btn" target="_blank">in</a>
+          <a href="https://reddit.com/submit?url=https://elevatemind.io/articles/financial-intelligence-schools.html&title=Financial%20Intelligence%3A%20What%20School%20Never%20Taught%20You%20About%20Money" class="share-btn" target="_blank">r</a>
+        </div>
+
+        <div class="related-articles">
+          <h3>Continue Reading</h3>
+          <div class="related-grid">
+            <a href="one-person-business-revolution.html" class="related-card">
+              <h4>The One-Person Business Revolution</h4>
+              <p>How solopreneurs are earning six and seven figures alone — and rewriting every rule of business.</p>
+            </a>
+            <a href="emma-grede-wealth-code.html" class="related-card">
+              <h4>Emma Grede Reveals the Core Code of Wealth Creation</h4>
+              <p>From a 15-year-old dropout to billion-dollar brands — the hidden architecture of self-made wealth.</p>
+            </a>
+            <a href="money-as-energy.html" class="related-card">
+              <h4>Money as Energy: A Philosophical Reframe</h4>
+              <p>The radical reframe that transforms how you earn, spend, invest, and relate to wealth.</p>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <aside>
+        <div class="ad-unit ad-sidebar" style="margin-bottom:24px;">
+          <p>300×250 Sidebar Ad</p>
+        </div>
+        <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:24px;margin-bottom:24px;">
+          <h3 style="font-size:1rem;margin-bottom:8px;">📬 Weekly Wisdom</h3>
+          <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-bottom:16px;">One powerful idea, every Sunday. No noise. No fluff.</p>
+          <form class="newsletter-form" style="flex-direction:column;">
+            <input type="email" placeholder="your@email.com" required>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Join 50,000+ Readers</button>
+          </form>
+        </div>
+        <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:24px;">
+          <h3 style="font-size:1rem;margin-bottom:16px;">🔥 Trending in Wealth</h3>
+          <div style="display:flex;flex-direction:column;gap:14px;">
+            <a href="psychology-spending-vs-investing.html" style="font-size:0.85rem;font-weight:600;line-height:1.5;">The Psychology of Spending vs. Investing</a>
+            <a href="building-wealth-by-decade.html" style="font-size:0.85rem;font-weight:600;line-height:1.5;">Building Wealth in Your 20s, 30s, and 40s</a>
+            <a href="antifragile-portfolio.html" style="font-size:0.85rem;font-weight:600;line-height:1.5;">The Antifragile Portfolio</a>
+            <a href="money-as-energy.html" style="font-size:0.85rem;font-weight:600;line-height:1.5;">Money as Energy: A Philosophical Reframe</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <section class="container">
+    <div class="newsletter-section">
+      <h3>Master Your Financial Architecture</h3>
+      <p>One transformative idea on wealth and financial intelligence, every Sunday. Join 50,000+ readers.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="your@email.com" required>
+        <button type="submit" class="btn btn-primary">Subscribe Free</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../" class="logo"><span class="logo-mark">◈</span><span>ElevateMind</span></a>
+          <p>A global sanctuary for awakened minds.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <a href="../categories/conscious-self.html">Conscious Self</a>
+          <a href="../categories/wealth-architecture.html">Wealth Architecture</a>
+          <a href="../categories/career-purpose.html">Career & Purpose</a>
+          <a href="../categories/relationship-dynamics.html">Relationships</a>
+          <a href="../categories/high-dimensional.html">High-Dimensional</a>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <a href="../about.html">About</a>
+          <a href="../advertise.html">Advertise</a>
+          <a href="../privacy.html">Privacy</a>
+          <a href="../terms.html">Terms</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 ElevateMind. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cookie-banner" id="cookie-banner">
+    <p>🍪 We use cookies. <a href="../privacy.html">Privacy Policy</a>.</p>
+    <button class="btn btn-primary" id="cookie-accept">Accept</button>
+  </div>
+  <button class="scroll-top" id="scroll-top">↑</button>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>家庭疗愈：打破代际创伤的循环 | ElevateMind</title>
+  <meta name="description" content="家庭是我们学习爱的第一所学校，也是受伤的第一现场。这篇深度指南帮助你识别代际创伤模式，掌握打破循环的科学方法，重建健康的家庭关系。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;900&family=Noto+Serif+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    body { font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif; }
+    h1, h2, h3, h4, .logo span:last-child, .hero-tag, .section-header h2 { font-family: 'Noto Serif SC', Georgia, serif; }
+    
+    .article-container { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+    .article-hero { padding: 60px 0 40px; text-align: center; }
+    .article-hero h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: 16px; line-height: 1.3; }
+    .article-meta-bar { display: flex; justify-content: center; gap: 20px; color: var(--color-text-muted); font-size: 0.85rem; margin-bottom: 32px; }
+    .article-featured-img { width: 100%; height: 400px; object-fit: cover; border-radius: var(--radius-lg); margin-bottom: 40px; }
+    .article-body { font-size: 1.05rem; line-height: 1.9; color: var(--color-text); }
+    .article-body h2 { font-size: 1.5rem; margin: 48px 0 20px; color: var(--color-text); }
+    .article-body h3 { font-size: 1.2rem; margin: 32px 0 16px; color: var(--color-text-secondary); }
+    .article-body p { margin-bottom: 20px; }
+    .article-body ul, .article-body ol { margin: 16px 0 24px 24px; }
+    .article-body li { margin-bottom: 10px; }
+    .article-body strong { color: var(--color-accent); }
+    
+    .pull-quote {
+      border-left: 4px solid var(--color-accent);
+      padding: 20px 28px;
+      margin: 36px 0;
+      background: var(--color-accent-light);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--color-text-secondary);
+      font-family: 'Noto Serif SC', Georgia, serif;
+    }
+    .pull-quote cite { display: block; margin-top: 12px; font-size: 0.9rem; font-style: normal; color: var(--color-text-muted); }
+    
+    .key-takeaways {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      margin: 40px 0;
+    }
+    .key-takeaways h3 { margin-top: 0; font-size: 1.2rem; }
+    .key-takeaways ul { list-style: none; margin: 0; padding: 0; }
+    .key-takeaways li { 
+      padding: 10px 0 10px 32px; 
+      position: relative; 
+      border-bottom: 1px solid var(--color-border);
+    }
+    .key-takeaways li:last-child { border-bottom: none; }
+    .key-takeaways li::before { 
+      content: '✓'; 
+      position: absolute; 
+      left: 0; 
+      color: var(--color-success); 
+      font-weight: 700; 
+    }
+    
+    .related-articles { margin: 60px 0; }
+    .related-articles h3 { margin-bottom: 24px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+    .related-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      transition: all 0.3s;
+    }
+    .related-card:hover { border-color: var(--color-accent); transform: translateY(-2px); }
+    .related-card h4 { font-size: 1rem; margin-bottom: 8px; }
+    .related-card p { font-size: 0.85rem; color: var(--color-text-secondary); }
+    
+    .share-bar { display: flex; gap: 12px; margin: 40px 0; padding-top: 24px; border-top: 1px solid var(--color-border); }
+    .share-bar span { color: var(--color-text-muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="read-progress" id="read-progress"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../" class="logo"><span class="logo-mark">◈</span><span>ElevateMind</span></a>
+      <nav class="nav-links">
+        <a href="../">首页</a>
+        <a href="../categories/conscious-self.html">自我认知</a>
+        <a href="../categories/wealth-architecture.html">财富架构</a>
+        <a href="../categories/career-purpose.html">职业使命</a>
+        <a href="../categories/relationship-dynamics.html" class="active">关系智慧</a>
+        <a href="../categories/trailblazers.html">思想巨擘</a>
+        <a href="../categories/high-dimensional.html">高维思维</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn-ghost" id="theme-toggle">🌙</button>
+        <button class="btn btn-primary">订阅</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="article-hero">
+    <div class="article-container">
+      <div class="hero-tag">🤝 关系智慧</div>
+      <h1>家庭疗愈：打破代际创伤的循环</h1>
+      <div class="article-meta-bar">
+        <span>📅 2026年5月19日</span>
+        <span>👁 22,156 阅读</span>
+        <span>💬 289 评论</span>
+        <span>⏱ 约13分钟</span>
+      </div>
+      <img class="article-featured-img" src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=1200&h=600&fit=crop" alt="一家人在阳光下微笑">
+    </div>
+  </section>
+
+  <div class="article-container">
+    <div class="ad-unit ad-header"><p>728×90 头部广告位</p></div>
+  </div>
+
+  <article class="article-container article-body">
+    <p>我们每个人都是家族故事的延续。你处理问题的方式、你对亲密关系的期待、你表达或压抑情绪的习惯——很大程度上不是你自己发明的，而是从上一代、甚至上上一代那里继承而来的。</p>
+
+    <p>这不是宿命论的宣言，而是心理学研究的结论。家庭治疗大师默里·鲍文（Murray Bowen）提出的"代际传递理论"指出，<strong>家庭中的情感模式、关系规则、未解决的冲突，会像基因一样代代相传</strong>，直到有人有意识地打破这个循环。</p>
+
+    <p>这篇文章将带你深入理解代际创伤的机制，并提供一套经过临床验证的疗愈路径。无论你是在一个不健康的原生家庭中长大，还是担心自己正在无意中复制父母的行为模式，这里都有你需要的答案。</p>
+
+    <h2>一、什么是代际创伤？看不见的家族遗产</h2>
+
+    <p>代际创伤（Intergenerational Trauma）是指创伤的影响从一代人传递到下一代人。它最早由精神分析学家在二战大屠杀幸存者家庭中发现——幸存者的子女虽然没有亲身经历集中营，却表现出类似创伤后应激障碍（PTSD）的症状：焦虑、噩梦、情感麻木、过度警觉。</p>
+
+    <p>后来的研究扩展了这一概念。代际创伤不仅限于战争或灾难等极端事件，也包括日常生活中累积的创伤：<strong>情感忽视、长期批评、父母离异时的恶劣冲突、物质成瘾、家庭暴力、经济压力的代际传递</strong>等。</p>
+
+    <h3>1.1 创伤传递的三条路径</h3>
+
+    <p>科学研究表明，创伤从一代传到下一代，主要通过三种机制：</p>
+
+    <ul>
+      <li><strong>表观遗传学路径</strong>：压力会改变基因表达（不改变DNA序列本身），而这些改变可以遗传给后代。荷兰饥荒研究、911事件后孕妇后代研究都证实了这一点。经历过重大创伤的父母，其子女的应激反应系统天生更加敏感。</li>
+      <li><strong>行为模仿路径</strong>：孩子是最精密的模仿机器。他们不仅模仿父母的语言，更模仿父母的情绪反应模式、关系处理方式、自我对话风格。一个在冷暴力家庭中长大的孩子，大概率会在自己的婚姻中复制这种模式——因为他只知道这一种"正常"。</li>
+      <li><strong>家庭叙事路径</strong>：家庭如何讲述自己的历史，塑造了孩子对世界的认知框架。如果家庭叙事是"世界很危险，所有人都会背叛你"，孩子会内化这种不信任；如果叙事是"我们必须互相牺牲才能生存"，孩子会内化为爱等于受苦。</li>
+    </ul>
+
+    <p>这三条路径往往同时运作，使得代际创伤的传递既深刻又隐蔽。受害者常常直到中年才意识到：我的问题不是"我这个人有问题"，而是"我继承了一个有问题的模式"。</p>
+
+    <h3>1.2 常见的代际创伤模式</h3>
+
+    <p>每个家庭的具体创伤表现不同，但一些模式反复出现：</p>
+
+    <ul>
+      <li><strong>情感剥夺循环</strong>：父母自身没有经历过情感滋养，所以不知道怎样滋养孩子。孩子长大后也缺乏爱的能力，继续让下一代情感饥渴。</li>
+      <li><strong>完美主义陷阱</strong>：父母用"爱"包装控制，孩子的价值取决于成绩和表现。孩子内化了"我不够好"的核心信念，并将同样的压力传递给自己的孩子。</li>
+      <li><strong>角色颠倒</strong>：父母情绪不稳定或功能缺失，孩子被迫过早承担照顾者角色。这个孩子成年后在关系中要么过度付出、要么无法接收别人的照顾。</li>
+      <li><strong>沉默与否认</strong>：家庭中有不可谈论的禁忌（离婚、精神疾病、成瘾、虐待），所有人都假装正常。孩子学会了"真实感受是危险的"，长大后也无法表达真实的自己。</li>
+      <li><strong>忠诚冲突</strong>：父母中的一方被另一方伤害，孩子被迫选边站。孩子成年后在所有亲密关系中都在无意识地重复这种"被撕裂"的体验。</li>
+    </ul>
+
+    <div class="pull-quote">
+      "你不需要为父母的痛苦负责，但你可能一直在不自觉地试图拯救他们。这是代际创伤最隐蔽的形式——孩子对父母的忠诚，变成了自我毁灭的脚本。"
+      <cite>—— 家庭治疗理论核心洞见</cite>
+    </div>
+
+    <h2>二、识别你的家族创伤图谱</h2>
+
+    <p>打破循环的第一步，是看见循环。这意味着你需要绘制自己的"家族创伤图谱"——不是出于指责，而是出于理解。</p>
+
+    <h3>2.1 家谱图：可视化你的家族情感模式</h3>
+
+    <p>家庭治疗师使用"家谱图"（Genogram）来追踪家族中的关系模式。你可以在家尝试一个简化版：</p>
+
+    <ol>
+      <li>画三代：你的祖父母、你的父母、你自己。如果已婚，包括伴侣和孩子。</li>
+      <li>标注重大事件：离婚、早逝、重大疾病、搬迁、财务危机、战争经历等。</li>
+      <li>标注关系质量：用不同线条表示亲密关系（粗实线）、冲突关系（锯齿线）、疏离关系（虚线）、断绝关系（断线）。</li>
+      <li>标注情绪主题：每个家庭都有自己的"情绪气候"。焦虑型家庭、抑郁型家庭、愤怒型家庭、冷漠型家庭——你的家族属于哪一类？</li>
+    </ol>
+
+    <p>完成这个练习后，你可能会惊讶地发现一些规律。例如：每一代人都有一个"替罪羊"角色；每一代人都有一个"照顾全家人"的长女；每一代人都在某个年龄段经历某种危机。这些不是巧合，是模式。</p>
+
+    <h3>2.2 核心信念追踪：你的"应该"从哪来</h3>
+
+    <p>我们的许多痛苦，来自深层核心信念。这些信念往往不是我们自己的发明：</p>
+
+    <ul>
+      <li>"我不配被爱"——可能来自父母长期的情绪忽视或条件式关爱</li>
+      <li>"我必须完美才能安全"——可能来自高压、高批评的家庭环境</li>
+      <li>"表达需求是自私的/软弱的"——可能来自"不要给别人添麻烦"的家庭文化</li>
+      <li>"冲突意味着关系要结束了"——可能来自父母用威胁和抛弃来解决分歧</li>
+      <li>"我必须牺牲自己才能被爱"——可能来自父母一方长期受苦，另一方理所当然的接受</li>
+    </ul>
+
+    <p>识别这些信念的来源，不是让你去怪罪父母，而是给你一个选择的机会：<strong>你可以选择继续相信这些信念，也可以选择更新它们</strong>。但前提是你必须先意识到它们的存在。</p>
+
+    <h2>三、打破循环：从受害者到疗愈者</h2>
+
+    <p>认识到创伤的存在只是开始。真正的疗愈需要行动——而且这不是一条容易的路。但你正在读的这篇文章，本身就是证明循环可以被打破的：你比上一代人更有觉察，你正在主动寻求改变。</p>
+
+    <h3>3.1 建立边界：你可以爱父母，但不拯救他们</h3>
+
+    <p>代际创伤循环的核心机制之一，是<strong>孩子对父母的"过度忠诚"</strong>。孩子无意识地承担父母的情绪负担，试图修复父母的人生，甚至在潜意识中复制父母的痛苦来保持连接。</p>
+
+    <p>打破这个循环的第一步，是建立健康的边界。边界不是墙，不是冷漠，不是断绝关系。边界是：</p>
+
+    <ul>
+      <li>区分"他们的情绪"和"我的情绪"——他们的愤怒、焦虑、失望，是他们的责任，不是你的</li>
+      <li>允许父母有他们的局限——接受"他们给不了我他们没有的东西"</li>
+      <li>拒绝"情感勒索"——"如果你不按照我的方式做，就是不爱我"是一种操控，不是爱</li>
+      <li>把自己的福祉放在首位——这不是自私，只有你先好起来，你才有能力真正帮助他人</li>
+    </ul>
+
+    <p>建立边界会带来暂时的内疚感——这是正常的。那个内疚的声音，很可能是你内化的父母的声音。承认这个声音的存在，但不服从它。</p>
+
+    <h3>3.2 重新养育自己：成为自己的理想父母</h3>
+
+    <p>如果我们在成长过程中没有获得足够的情感滋养，我们可以在成年后"重新养育"自己。这听起来有点抽象，但实际上有具体的操作方法：</p>
+
+    <p><strong>内在小孩对话</strong>：识别你内心那个受伤的、恐惧的、愤怒的小孩。找一个安静的时间，想象这个小孩站在你面前。你会对他说什么？你会怎样安慰他？你会怎样保护他？写下来，大声说出来。这不是矫情，是在修复你大脑中"我不值得被善待"的神经通路。</p>
+
+    <p><strong>自我关怀练习</strong>：心理学家克里斯汀·内夫（Kristin Neff）的研究表明，自我关怀（Self-Compassion）是疗愈创伤最有效的方式之一。当痛苦出现时，对自己说三句话："这一刻很痛苦"（正念），"痛苦是人类体验的一部分"（共同人性），"愿我善待自己"（自我关怀）。</p>
+
+    <p><strong>创造新的"正常"</strong>：如果你不知道健康的关系是什么样的，你需要刻意学习。阅读健康关系的书籍，观察你身边功能良好的家庭，甚至在工作关系、友谊中练习新的互动模式。你的大脑需要新的模板来替代旧的模式。</p>
+
+    <div class="ad-unit ad-in-content"><p>文中广告位</p></div>
+
+    <h3>3.3 打破"重复强迫"：为什么我们会选择熟悉的痛苦</h3>
+
+    <p>弗洛伊德提出的"重复强迫"（Repetition Compulsion）是代际创伤最顽固的表现：我们无意识地将自己置于与童年创伤相似的情境中，试图这一次"赢"。</p>
+
+    <p>一个在情感冷漠父亲身边长大的女孩，可能会反复选择冷漠的男性伴侣，在无意识中试图"这一次让他爱我"。一个在酗酒母亲身边长大的男孩，可能会与一个情绪不稳定的人结婚，试图"这一次拯救她"。</p>
+
+    <p>打破重复强迫，需要极大的自我觉察。当你发现自己又一次被相似类型的人吸引时，停下来问自己：<strong>"我对这个人的熟悉感来自哪里？这种熟悉感是健康的还是创伤性的？"</strong></p>
+
+    <p>必要时，在关系早期引入"慢速约会"原则——给自己至少三个月的观察期，让化学反应的迷雾散去，看看对方的真实模式。如果某个关系让你感到"说不清楚的不舒服"，相信这个直觉，它可能是你的潜意识在识别熟悉的创伤模式。</p>
+
+    <h2>四、成为新的起点：为下一代创造不同</h2>
+
+    <p>如果你已经有了自己的孩子，或者正在考虑生育，这一节尤为重要。代际创伤的打破，最终要落实到日常的亲子互动中。</p>
+
+    <h3>4.1 修复性养育：你有机会成为"够好的父母"</h3>
+
+    <p>心理学家温尼科特提出的"够好的母亲"（Good Enough Mother）概念，给许多焦虑的父母带来了解脱。你不需要完美。事实上，完美的父母是压迫性的。你只需要"够好"——大多数时候回应孩子的需求，偶尔失误，然后修复。</p>
+
+    <p>关键在于<strong>"修复"（Repair）</strong>。当你对孩子发脾气、忽视了他的需求、或者犯了其他养育错误后，主动去修复。向孩子道歉："妈妈刚才太生气了，说话太重了。这不是你的错。我下次会努力用更好的方式表达。"</p>
+
+    <p>研究表明，<strong>父母能否修复关系中的裂痕，比父母是否从不犯错，对孩子的心理健康影响更大</strong>。修复教会孩子：关系可以承受冲突，冲突后可以和好，人不需要完美也值得被爱。</p>
+
+    <h3>4.2 允许孩子有"不需要拯救父母"的童年</h3>
+
+    <p>这是打破循环最直接的方式：不要让这一代孩子承担上一代未解决的情绪负担。不要在孩子面前过度抱怨伴侣、过度分享财务焦虑、或者让孩子充当你和伴侣之间的传话筒。</p>
+
+    <p>孩子需要知道：父母是大人，他们能处理自己的问题。孩子只需要做孩子。</p>
+
+    <h3>4.3 讲述新的家族叙事</h3>
+
+    <p>家族叙事的力量不容小觑。如果家庭故事的基调是"我们一直很倒霉""这个世界对我们不公"，孩子会内化这种无力感。你可以开始讲述不同的故事：</p>
+
+    <p>"我们家族经历过很多困难，但每一代都有人努力改变。我是那个正在改变的人。你也是一个新的开始。"</p>
+
+    <p>这不是否认痛苦，而是在痛苦中加入希望的维度。你让孩子知道：<strong>痛苦是真实的，但改变也是可能的</strong>。</p>
+
+    <div class="pull-quote">
+      "疗愈不是让你忘记过去，而是让你不再被过去定义。你可以同时 honoring 你的根，又选择不同的方向。你就是你家族的新篇章。"
+      <cite>—— 整合创伤研究与正向心理学</cite>
+    </div>
+
+    <h2>五、当你需要专业帮助</h2>
+
+    <p>以上所有方法，都适合自助实践。但有些情况下，专业帮助是必要的，甚至是关键的：</p>
+
+    <ul>
+      <li>如果你发现自己有严重的抑郁、焦虑或PTSD症状</li>
+      <li>如果你反复陷入虐待性关系，无法靠自己停止</li>
+      <li>如果你正在考虑自杀或自伤</li>
+      <li>如果你感到"卡住"了——知道问题在哪，但无力改变</li>
+      <li>如果你正在经历家庭危机（如离婚、丧亲、重大疾病）</li>
+    </ul>
+
+    <p>寻求专业帮助不是软弱，而是智慧。创伤治疗师、家庭治疗师、EMDR治疗师、IFS（内部家庭系统）治疗师——这些都是经过训练的专业人士，可以提供你独自难以达到的深度疗愈。</p>
+
+    <p>记住：代际创伤的传递不是你的错，但打破它是你的责任——也是你的机会。你可能是家族几代人以来，第一个说"够了"的人。这需要勇气，但你会因此获得自由，你的孩子会因此获得一个不同的起点。</p>
+
+    <p>你的疗愈，不是你一个人的事。它是给整个家族系统的礼物。</p>
+
+    <div class="key-takeaways">
+      <h3>🎯 核心要点</h3>
+      <ul>
+        <li><strong>代际创伤是真实存在的</strong>：通过表观遗传、行为模仿和家庭叙事三条路径传递；识别它是打破循环的第一步。</li>
+        <li><strong>绘制你的家族图谱</strong>：用家谱图和核心信念追踪，可视化家族中的情感模式和创伤传递路径。</li>
+        <li><strong>建立健康边界</strong>：你可以爱父母，但不承担他们的情绪；区分"他们的痛苦"和"我的责任"是疗愈的关键。</li>
+        <li><strong>重新养育自己</strong>：通过内在小孩对话、自我关怀练习和创造新的"正常"模板，修复早年未满足的情感需求。</li>
+        <li><strong>成为新的起点</strong>：在亲子关系中实践修复性养育、允许孩子做孩子、讲述包含希望的家族新叙事。</li>
+      </ul>
+    </div>
+
+    <div class="share-bar">
+      <span>分享这篇文章：</span>
+      <button class="share-btn" onclick="shareArticle('twitter', window.location.href, document.title)">𝕏</button>
+      <button class="share-btn" onclick="shareArticle('facebook', window.location.href, document.title)">f</button>
+      <button class="share-btn" onclick="shareArticle('linkedin', window.location.href, document.title)">in</button>
+    </div>
+
+    <div class="related-articles">
+      <h3>📚 延伸阅读</h3>
+      <div class="related-grid">
+        <a class="related-card" href="romantic-intelligence.html">
+          <h4>婚恋智慧：如何清醒地选择人生伴侣</h4>
+          <p>大多数人凭"感觉"选伴侣，智慧的人凭价值观选。帮助你建立清醒择偶的完整框架。</p>
+        </a>
+        <a class="related-card" href="../categories/relationship-dynamics.html">
+          <h4>关系智慧专栏</h4>
+          <p>探索更多关于亲密关系、家庭疗愈和沟通艺术的深度文章。</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="newsletter-section" style="margin: 48px 0;">
+      <h3>每周一封深度思想信</h3>
+      <p>加入 50,000+ 觉醒者，每周收到关于家庭疗愈、自我认知和人生智慧的深度洞见。不啰嗦、不鸡汤。</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="your@email.com" required>
+        <button type="submit" class="btn btn-primary">免费订阅</button>
+      </form>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../" class="logo"><span class="logo-mark">◈</span><span>ElevateMind</span></a>
+          <p>全球觉醒者的精神家园。思想自由流通，灵魂同频共振。</p>
+        </div>
+        <div class="footer-links">
+          <h4>探索</h4>
+          <a href="../categories/conscious-self.html">自我认知</a>
+          <a href="../categories/wealth-architecture.html">财富架构</a>
+          <a href="../categories/career-purpose.html">职业使命</a>
+          <a href="../categories/relationship-dynamics.html">关系智慧</a>
+          <a href="../categories/trailblazers.html">思想巨擘</a>
+          <a href="../categories/high-dimensional.html">高维思维</a>
+        </div>
+        <div class="footer-links">
+          <h4>关于</h4>
+          <a href="../about.html">关于我们</a>
+          <a href="../advertise.html">广告合作</a>
+          <a href="../membership.html">加入会员</a>
+          <a href="../privacy.html">隐私政策</a>
+          <a href="../terms.html">使用条款</a>
+        </div>
+        <div class="footer-links">
+          <h4>语言</h4>
+          <a href="../articles/family-bonds.html">🇺🇸 English</a>
+          <a href="family-bonds.html" style="color:var(--color-accent);">🇨🇳 简体中文</a>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 ElevateMind. 保留所有权利。</p></div>
+    </div>
+  </footer>
+
+  <div class="cookie-banner" id="cookie-banner">
+    <p>🍪 我们使用 Cookie 以提供更好的体验。<a href="../privacy.html">隐私政策</a></p>
+    <button class="btn btn-primary" id="cookie-accept">同意</button>
+  </div>
+  <button class="scroll-top" id="scroll-top">↑</button>
+  <script src="../js/main.js"></script>
+</body>
+</html>

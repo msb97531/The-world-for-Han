@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElevateMind — Where Curiosity Ignites Transformation</title>
+  <meta name="description" content="A global sanctuary for awakened minds. Deep wisdom on consciousness, wealth, purpose, relationships, and high-dimensional thinking.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="read-progress" id="read-progress"></div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-mark">◈</span>
+        <span>ElevateMind</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/" class="active">Home</a>
+        <a href="categories/conscious-self.html">Conscious Self</a>
+        <a href="categories/wealth-architecture.html">Wealth</a>
+        <a href="categories/career-purpose.html">Career</a>
+        <a href="categories/trailblazers.html">Trailblazers</a>
+        <a href="categories/high-dimensional.html">High-Dimensional</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn-ghost" id="theme-toggle" title="Toggle dark mode">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path></svg>
+        </button>
+        <button class="btn btn-primary">Subscribe</button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HEADER BANNER AD -->
+  <div class="container">
+    <div class="ad-unit ad-header">
+      <p>728×90 Header Banner — Google AdSense / Affiliate</p>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-tag">◆ The Global Sanctuary for Awakened Minds</div>
+      <h1>Question Everything.<br>Grow Intentionally.<br>Live Consciously.</h1>
+      <p class="lead">Deep wisdom for the few who refuse to sleepwalk through life. We curate the world's most transformative ideas — on consciousness, wealth, purpose, and human potential.</p>
+      <div class="search-box">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+        <input type="text" id="search-input" placeholder="Search insights, articles, thinkers..." autocomplete="off">
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="category-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Explore the Map</h2>
+        <a href="categories/">View All Categories →</a>
+      </div>
+      <div class="category-grid">
+        <a href="categories/conscious-self.html" class="category-card">
+          <div class="category-icon" style="background:#e0e7ff">🧠</div>
+          <h3>Conscious Self</h3>
+          <p>Mindfulness, awareness, emotional mastery</p>
+        </a>
+        <a href="categories/wealth-architecture.html" class="category-card">
+          <div class="category-icon" style="background:#fef3c7">💰</div>
+          <h3>Wealth Architecture</h3>
+          <p>Financial intelligence & systems</p>
+        </a>
+        <a href="categories/career-purpose.html" class="category-card">
+          <div class="category-icon" style="background:#dbeafe">💫</div>
+          <h3>Career & Purpose</h3>
+          <p>Work as an expression of self</p>
+        </a>
+        <a href="categories/relationship-dynamics.html" class="category-card">
+          <div class="category-icon" style="background:#fce7f3">❤️</div>
+          <h3>Relationship Dynamics</h3>
+          <p>The quality of your connections</p>
+        </a>
+        <a href="categories/systems-worldview.html" class="category-card">
+          <div class="category-icon" style="background:#d1fae5">🌍</div>
+          <h3>Systems & Worldview</h3>
+          <p>See the board, master the game</p>
+        </a>
+        <a href="categories/high-dimensional.html" class="category-card">
+          <div class="category-icon" style="background:#ede9fe">🔮</div>
+          <h3>High-Dimensional</h3>
+          <p>Levels to this game most never see</p>
+        </a>
+        <a href="categories/trailblazers.html" class="category-card">
+          <div class="category-icon" style="background:#ffedd5">🏔️</div>
+          <h3>Trailblazers</h3>
+          <p>Stand on giants. Become one.</p>
+        </a>
+        <a href="categories/life-guides.html" class="category-card">
+          <div class="category-icon" style="background:#f3f4f6">📖</div>
+          <h3>Life Guides</h3>
+          <p>Practical solutions to complex problems</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST ARTICLES + SIDEBAR -->
+  <section class="category-section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 320px;gap:40px;">
+        <div>
+          <div class="section-header">
+            <h2>Latest Insights</h2>
+            <a href="latest/">View All →</a>
+          </div>
+          <div class="articles-grid" id="latest-articles">
+            <!-- Articles injected by JS or static -->
+            <article class="article-card">
+              <div class="article-thumb">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=640&h=360&fit=crop" alt="">
+                <span class="article-category-tag">Conscious Self</span>
+              </div>
+              <div class="article-body">
+                <h3><a href="articles/reclaiming-sensation.html">Reclaiming Sensation: How to Break Free from Screen-Induced Numbness</a></h3>
+                <p>Artist and researcher Tereza Violet Stehlíková explores embodied experience, sensory perception, and the profound relationship between place and meaning...</p>
+                <div class="article-meta">
+                  <span>📅 May 24, 2026</span>
+                  <span>👁 208</span>
+                  <span>💬 52</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-card">
+              <div class="article-thumb">
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=640&h=360&fit=crop" alt="">
+                <span class="article-category-tag">Wealth Architecture</span>
+              </div>
+              <div class="article-body">
+                <h3><a href="articles/emma-grede-wealth-code.html">Emma Grede Reveals the Core Code of Wealth Creation</a></h3>
+                <p>Dropped out at 15. Single-parent household. Survival pressure. From this starting point, Emma Grede built billion-dollar brands alongside the Kardashians...</p>
+                <div class="article-meta">
+                  <span>📅 May 23, 2026</span>
+                  <span>👁 471</span>
+                  <span>💬 40</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-card">
+              <div class="article-thumb">
+                <img src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?w=640&h=360&fit=crop" alt="">
+                <span class="article-category-tag">Relationship Dynamics</span>
+              </div>
+              <div class="article-body">
+                <h3><a href="articles/nine-truths-about-love.html">Nine Truths About Authentic Love You Need to Know</a></h3>
+                <p>Jay Shetty, host of the world's #1 mental health podcast "On Purpose," interviews experts, celebrities, and thought leaders to expand our understanding...</p>
+                <div class="article-meta">
+                  <span>📅 May 22, 2026</span>
+                  <span>👁 176</span>
+                  <span>💬 43</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-card">
+              <div class="article-thumb">
+                <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=640&h=360&fit=crop" alt="">
+                <span class="article-category-tag">Conscious Self</span>
+              </div>
+              <div class="article-body">
+                <h3><a href="articles/authentic-self-difficulty.html">Why Being Your Authentic Self Seems So Impossibly Hard</a></h3>
+                <p>An in-depth analysis of the challenges and paths to pursuing authentic selfhood. How society channels us toward approval, security, and control...</p>
+                <div class="article-meta">
+                  <span>📅 Feb 16, 2025</span>
+                  <span>👁 387</span>
+                  <span>💬 27</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-card">
+              <div class="article-thumb">
+                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=640&h=360&fit=crop" alt="">
+                <span class="article-category-tag">Career & Purpose</span>
+              </div>
+              <div class="article-body">
+                <h3><a href="articles/play-is-serious.html">Play Is Not Frivolous — It Is Higher-Order Seriousness</a></h3>
+                <p>"Play" is an incredibly rich word, yet we constantly narrow it: either as mere entertainment, or dismissed as "unproductive." In truth, play permeates...</p>
+                <div class="article-meta">
+                  <span>📅 Oct 17, 2025</span>
+                  <span>👁 147</span>
+                  <span>💬 12</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-card">
+              <div class="article-thumb">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=640&h=360&fit=crop" alt="">
+                <span class="article-category-tag">Systems & Worldview</span>
+              </div>
+              <div class="article-body">
+                <h3><a href="articles/potential-uncertainty.html">Your Potential Is Directly Proportional to Your Tolerance for Uncertainty</a></h3>
+                <p>We all want life to come with a clear answer key, a map with every turn marked. But the truth of growth is this: the more important the choice...</p>
+                <div class="article-meta">
+                  <span>📅 Oct 11, 2025</span>
+                  <span>👁 187</span>
+                  <span>💬 127</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="pagination">
+            <span class="current">1</span>
+            <a href="/?page=2">2</a>
+            <a href="/?page=3">3</a>
+            <span>...</span>
+            <a href="/?page=798">798</a>
+            <a href="/?page=2">Next →</a>
+          </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside>
+          <!-- SIDEBAR AD -->
+          <div class="ad-unit ad-sidebar" style="margin-bottom:24px;">
+            <p>300×250 Sidebar Ad</p>
+          </div>
+
+          <!-- NEWSLETTER MINI -->
+          <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:24px;margin-bottom:24px;">
+            <h3 style="font-size:1rem;margin-bottom:8px;">📬 Weekly Wisdom</h3>
+            <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-bottom:16px;">One powerful idea, every Sunday. No noise. No fluff.</p>
+            <form class="newsletter-form" style="flex-direction:column;">
+              <input type="email" placeholder="your@email.com" required>
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Join 50,000+ Readers</button>
+            </form>
+          </div>
+
+          <!-- TRENDING -->
+          <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:24px;margin-bottom:24px;">
+            <h3 style="font-size:1rem;margin-bottom:16px;">🔥 Trending Now</h3>
+            <div style="display:flex;flex-direction:column;gap:14px;">
+              <a href="articles/human-misjudgment.html" style="font-size:0.85rem;font-weight:600;line-height:1.5;">The Psychology of Human Misjudgment — Charlie Munger's Framework</a>
+              <a href="articles/jung-deep-dive.html" style="font-size:0.85rem;font-weight:600;line-height:1.5;">Vol.068: Approaching Jung — The Man Who Takes You Into the Depths</a>
+              <a href="articles/schopenhauer-wisdom.html" style="font-size:0.85rem;font-weight:600;line-height:1.5;">Vol.067: Arthur Schopenhauer Essays — The Wisdom of Life</a>
+              <a href="articles/gaze-of-others.html" style="font-size:0.85rem;font-weight:600;line-height:1.5;">Vol.066: Stop Being Trapped in Other People's Gaze</a>
+              <a href="articles/reading-solutions.html" style="font-size:0.85rem;font-weight:600;line-height:1.5;">Vol.065: Reading — One More Solution to Life</a>
+            </div>
+          </div>
+
+          <!-- SPONSORED -->
+          <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:20px;margin-bottom:24px;">
+            <p style="font-size:0.6rem;color:var(--color-text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Sponsored</p>
+            <a href="#" style="font-size:0.85rem;font-weight:600;">Masterclass: Learn from the World's Best — Exclusive 50% Off for ElevateMind Readers</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- IN-CONTENT AD -->
+  <div class="container">
+    <div class="ad-unit ad-in-content">
+      <p>Native In-Content Ad — Sponsored Article / Affiliate Recommendation</p>
+    </div>
+  </div>
+
+  <!-- TRAILBLAZERS -->
+  <section class="category-section" style="background:var(--color-surface);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Trailblazers — Giants Whose Shoulders We Stand On</h2>
+        <a href="categories/trailblazers.html">View All →</a>
+      </div>
+      <div class="trailblazers-grid">
+        <a href="trailblazers/munger.html" class="trailblazer-card">
+          <div class="trailblazer-avatar" style="background:linear-gradient(135deg,#667eea,#764ba2)">CM</div>
+          <h4>Charlie Munger</h4>
+          <p>Investor & Thinker</p>
+        </a>
+        <a href="trailblazers/buffett.html" class="trailblazer-card">
+          <div class="trailblazer-avatar" style="background:linear-gradient(135deg,#f093fb,#f5576c)">WB</div>
+          <h4>Warren Buffett</h4>
+          <p>The Oracle</p>
+        </a>
+        <a href="trailblazers/jobs.html" class="trailblazer-card">
+          <div class="trailblazer-avatar" style="background:linear-gradient(135deg,#4facfe,#00f2fe)">SJ</div>
+          <h4>Steve Jobs</h4>
+          <p>Visionary</p>
+        </a>
+        <a href="trailblazers/drucker.html" class="trailblazer-card">
+          <div class="trailblazer-avatar" style="background:linear-gradient(135deg,#43e97b,#38f9d7)">PD</div>
+          <h4>Peter Drucker</h4>
+          <p>Management Sage</p>
+        </a>
+        <a href="trailblazers/musk.html" class="trailblazer-card">
+          <div class="trailblazer-avatar" style="background:linear-gradient(135deg,#fa709a,#fee140)">EM</div>
+          <h4>Elon Musk</h4>
+          <p>Disruptor</p>
+        </a>
+        <a href="trailblazers/graham.html" class="trailblazer-card">
+          <div class="trailblazer-avatar" style="background:linear-gradient(135deg,#a8edea,#fed6e3)">BG</div>
+          <h4>Benjamin Graham</h4>
+          <p>Value Investing</p>
+        </a>
+        <a href="trailblazers/kelly.html" class="trailblazer-card">
+          <div class="trailblazer-avatar" style="background:linear-gradient(135deg,#ffecd2,#fcb69f)">KK</div>
+          <h4>Kevin Kelly</h4>
+          <p>Future Optimist</p>
+        </a>
+        <a href="trailblazers/naval.html" class="trailblazer-card">
+          <div class="trailblazer-avatar" style="background:linear-gradient(135deg,#d299c2,#fef9d7)">NR</div>
+          <h4>Naval Ravikant</h4>
+          <p>Philosopher King</p>
+        </a>
+        <a href="trailblazers/dalio.html" class="trailblazer-card">
+          <div class="trailblazer-avatar" style="background:linear-gradient(135deg,#89f7fe,#66a6ff)">RD</div>
+          <h4>Ray Dalio</h4>
+          <p>Principles</p>
+        </a>
+        <a href="categories/trailblazers.html" class="trailblazer-card">
+          <div class="trailblazer-avatar" style="background:var(--color-border);color:var(--color-text-muted);">+</div>
+          <h4>View All</h4>
+          <p>50+ Trailblazers</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEEP DIVES -->
+  <section class="category-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Deep Dives — Curated Collections That Transform</h2>
+        <a href="deep-dives/">View All Collections →</a>
+      </div>
+      <div class="articles-grid">
+        <article class="article-card">
+          <div class="article-thumb">
+            <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=640&h=360&fit=crop" alt="">
+            <span class="article-category-tag" style="background:var(--color-warm)">Deep Dive</span>
+          </div>
+          <div class="article-body">
+            <h3><a href="deep-dives/vol69-plan-2026.html">Vol.069: Year-End Special — Architect Your 2026</a></h3>
+            <p>In a world brimming with uncertainty, how do you take responsibility for your own life? We revisit our most impactful pieces to help you build an intentional year...</p>
+            <div class="article-meta">
+              <span>📅 Jan 15, 2026</span>
+              <span>👁 296</span>
+              <span>💬 31</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-thumb">
+            <img src="https://images.unsplash.com/photo-1474418397713-7ede21d49118?w=640&h=360&fit=crop" alt="">
+            <span class="article-category-tag" style="background:var(--color-warm)">Deep Dive</span>
+          </div>
+          <div class="article-body">
+            <h3><a href="deep-dives/vol68-jung.html">Vol.068: Approaching Jung — The Man Who Takes You Into the Depths</a></h3>
+            <p>Carl Jung — founder of analytical psychology, explorer of the collective unconscious, and the psychologist who ventured deepest into the soul...</p>
+            <div class="article-meta">
+              <span>📅 Nov 24, 2025</span>
+              <span>👁 326</span>
+              <span>💬 150</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-thumb">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=640&h=360&fit=crop" alt="">
+            <span class="article-category-tag" style="background:var(--color-warm)">Deep Dive</span>
+          </div>
+          <div class="article-body">
+            <h3><a href="deep-dives/vol67-schopenhauer.html">Vol.067: Arthur Schopenhauer — The Wisdom of Life</a></h3>
+            <p>From the German philosopher's late-life essays — his rare accessible work. Not as dense as "The World as Will," but more like a wise man's letter written at life's sunset...</p>
+            <div class="article-meta">
+              <span>📅 Nov 22, 2025</span>
+              <span>👁 178</span>
+              <span>💬 79</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIFE GUIDES -->
+  <section class="category-section" style="background:var(--color-surface);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Life Guides — Complex Problems, Simple Solutions</h2>
+        <a href="categories/life-guides.html">View All Guides →</a>
+      </div>
+      <div class="articles-grid">
+        <article class="article-card">
+          <div class="article-body">
+            <h3><a href="guides/life-restart.html">🔄 The Complete Guide to Restarting Your Life</a></h3>
+            <p>Sometimes the only way forward is to begin again. A step-by-step framework for radical life transformation at any age.</p>
+            <div class="article-meta">
+              <span>📖 12 min read</span>
+              <span>⭐ Featured</span>
+            </div>
+          </div>
+        </article>
+        <article class="article-card">
+          <div class="article-body">
+            <h3><a href="guides/efficient-work.html">⚡ The Efficient Work Guide — Do More, Stress Less</a></h3>
+            <p>Productivity is not about doing more. It's about doing what matters. A system for focused, fulfilling work.</p>
+            <div class="article-meta">
+              <span>📖 10 min read</span>
+              <span>⭐ Featured</span>
+            </div>
+          </div>
+        </article>
+        <article class="article-card">
+          <div class="article-body">
+            <h3><a href="guides/emotional-mastery.html">🧘 Emotional Mastery — Navigate Your Inner World</a></h3>
+            <p>Your emotions are not enemies to suppress. They are signals to understand. Learn to work with, not against, your feelings.</p>
+            <div class="article-meta">
+              <span>📖 15 min read</span>
+              <span>⭐ Featured</span>
+            </div>
+          </div>
+        </article>
+        <article class="article-card">
+          <div class="article-body">
+            <h3><a href="guides/social-intelligence.html">🤝 Social Intelligence — Build Connections That Matter</a></h3>
+            <p>The art of reading rooms, understanding people, and creating genuine bonds in an increasingly isolated world.</p>
+            <div class="article-meta">
+              <span>📖 11 min read</span>
+              <span>⭐ Featured</span>
+            </div>
+          </div>
+        </article>
+        <article class="article-card">
+          <div class="article-body">
+            <h3><a href="guides/overcome-procrastination.html">⏰ The Procrastination Rescue Guide</a></h3>
+            <p>Procrastination is not laziness. It's emotional regulation gone wrong. Here's how to rewire your relationship with action.</p>
+            <div class="article-meta">
+              <span>📖 9 min read</span>
+              <span>⭐ Featured</span>
+            </div>
+          </div>
+        </article>
+        <article class="article-card">
+          <div class="article-body">
+            <h3><a href="guides/partner-selection.html">💞 The Partner Selection Guide — Choose Wisely</a></h3>
+            <p>The person you choose to share your life with will shape your reality more than almost any other decision. Choose consciously.</p>
+            <div class="article-meta">
+              <span>📖 14 min read</span>
+              <span>⭐ Featured</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER CTA -->
+  <section class="container">
+    <div class="newsletter-section">
+      <h3>Join 50,000+ Awakened Minds</h3>
+      <p>One powerful idea every Sunday. Zero noise. Zero fluff. Just distilled wisdom for people who refuse to sleepwalk through life.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn btn-primary">Subscribe Free</button>
+      </form>
+      <p style="font-size:0.75rem;color:var(--color-text-muted);margin-top:12px;">No spam. Unsubscribe anytime. Join thinkers from 120+ countries.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <span class="logo-mark">◈</span>
+            <span>ElevateMind</span>
+          </a>
+          <p>A global sanctuary for awakened minds. We curate transformative ideas on consciousness, wealth, purpose, and human potential.</p>
+          <div class="share-btns" style="margin-top:16px;">
+            <a href="https://twitter.com/elevatemind" class="share-btn" target="_blank">𝕏</a>
+            <a href="https://facebook.com/elevatemind" class="share-btn" target="_blank">f</a>
+            <a href="https://linkedin.com/company/elevatemind" class="share-btn" target="_blank">in</a>
+            <a href="https://reddit.com/r/elevatemind" class="share-btn" target="_blank">r</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <a href="categories/conscious-self.html">Conscious Self</a>
+          <a href="categories/wealth-architecture.html">Wealth Architecture</a>
+          <a href="categories/career-purpose.html">Career & Purpose</a>
+          <a href="categories/relationship-dynamics.html">Relationships</a>
+          <a href="categories/high-dimensional.html">High-Dimensional</a>
+          <a href="categories/trailblazers.html">Trailblazers</a>
+        </div>
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <a href="deep-dives/">Deep Dives</a>
+          <a href="categories/life-guides.html">Life Guides</a>
+          <a href="books/">Book Summaries</a>
+          <a href="audio/">Audio Insights</a>
+          <a href="search.html">Search</a>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="advertise.html">Advertise</a>
+          <a href="membership.html">Membership</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>Language</h4>
+          <a href="index.html" style="color:var(--color-accent);">🇺🇸 English</a>
+          <a href="cn/index.html">🇨🇳 简体中文</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 ElevateMind. All rights reserved. Crafted for awakened minds worldwide.</p>
+        <p>Made with ◈ for those who refuse to settle.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STICKY BOTTOM AD -->
+  <div class="ad-sticky" id="sticky-ad">
+    <div style="display:flex;align-items:center;gap:16px;">
+      <span style="font-size:0.75rem;color:var(--color-text-muted);">Sponsored</span>
+      <span style="font-size:0.85rem;">🚀 Start Your Online Business — Free Masterclass Inside</span>
+      <button class="btn btn-primary" style="padding:6px 14px;font-size:0.75rem;">Learn More</button>
+    </div>
+    <button id="close-sticky-ad" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);padding:4px;color:var(--color-text-muted);">✕</button>
+  </div>
+
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner" id="cookie-banner">
+    <p>🍪 We use cookies to enhance your experience and deliver personalized content. By continuing, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+    <button class="btn btn-primary" id="cookie-accept" style="padding:8px 20px;">Accept & Continue</button>
+  </div>
+
+  <!-- SCROLL TO TOP -->
+  <button class="scroll-top" id="scroll-top">↑</button>
+
+  <!-- NEWSLETTER POPUP -->
+  <div id="newsletter-popup" style="position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1003;display:none;align-items:center;justify-content:center;">
+    <div style="background:var(--color-surface);border-radius:var(--radius-lg);padding:48px;max-width:420px;width:90%;text-align:center;position:relative;">
+      <button id="close-newsletter" style="position:absolute;top:16px;right:16px;color:var(--color-text-muted);">✕</button>
+      <div style="font-size:3rem;margin-bottom:16px;">📬</div>
+      <h3>Before You Go...</h3>
+      <p style="color:var(--color-text-secondary);margin:12px 0 24px;">Join 50,000+ thinkers receiving one powerful idea every Sunday. No noise. No spam.</p>
+      <form class="newsletter-form" style="flex-direction:column;">
+        <input type="email" placeholder="your@email.com" required>
+        <button type="submit" class="btn btn-primary">Subscribe Free</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

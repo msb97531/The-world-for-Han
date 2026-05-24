@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>阴影整合：为什么你必须拥抱黑暗才能完整 | ElevateMind</title>
+  <meta name="description" content="你拒绝承认的一切并不会消失。它会转入地下，积蓄力量，以扭曲的形式重新出现——通过投射、自我破坏和无法解释的模式重复。这里是取回它的方法。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;900&family=Noto+Serif+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    body { font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Noto Serif SC', Georgia, serif; }
+    .article-hero { padding: 40px 0 20px; text-align: center; }
+    .article-hero h1 { max-width: 800px; margin: 0 auto 16px; }
+    .article-hero .article-meta-bar { display: flex; justify-content: center; gap: 24px; font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 24px; }
+    .article-hero img { width: 100%; max-width: 1200px; height: 500px; object-fit: cover; border-radius: var(--radius-lg); margin: 0 auto; display: block; }
+    .article-content { max-width: 720px; margin: 0 auto; padding: 40px 24px; }
+    .article-content h2 { font-size: 1.5rem; margin-top: 48px; margin-bottom: 16px; }
+    .article-content h3 { font-size: 1.2rem; margin-top: 32px; margin-bottom: 12px; color: var(--color-accent); }
+    .article-content p { margin-bottom: 20px; font-size: 1.05rem; line-height: 1.8; }
+    .pull-quote {
+      border-left: 4px solid var(--color-accent);
+      padding: 20px 28px;
+      margin: 32px 0;
+      background: var(--color-accent-light);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.25rem;
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--color-text);
+    }
+    .pull-quote cite {
+      display: block; margin-top: 12px; font-size: 0.85rem; font-style: normal;
+      font-family: 'Noto Sans SC', sans-serif; color: var(--color-text-secondary);
+    }
+    .key-takeaways {
+      background: var(--color-surface); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: 32px; margin: 48px 0;
+    }
+    .key-takeaways h2 { margin-top: 0; font-size: 1.3rem; }
+    .key-takeaways ul { list-style: disc; padding-left: 24px; margin-top: 16px; }
+    .key-takeaways li { margin-bottom: 10px; font-size: 0.95rem; line-height: 1.7; }
+    .share-section { display: flex; align-items: center; gap: 16px; margin: 40px 0; padding-top: 24px; border-top: 1px solid var(--color-border); }
+    .share-section span { font-size: 0.85rem; font-weight: 600; color: var(--color-text-secondary); }
+    .related-articles { margin: 48px 0; }
+    .related-articles h2 { font-size: 1.3rem; margin-bottom: 20px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .related-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 20px; transition: all 0.3s; }
+    .related-card:hover { border-color: var(--color-accent); transform: translateY(-2px); }
+    .related-card h4 { font-size: 0.95rem; margin-bottom: 8px; }
+    .related-card p { font-size: 0.8rem; color: var(--color-text-secondary); line-height: 1.5; }
+    .reading-time-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--color-accent-light); color: var(--color-accent); padding: 4px 12px; border-radius: 100px; font-size: 0.75rem; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="read-progress" id="read-progress"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../" class="logo"><span class="logo-mark">◈</span><span>ElevateMind</span></a>
+      <nav class="nav-links">
+        <a href="../">首页</a>
+        <a href="../categories/conscious-self.html" class="active">自我认知</a>
+        <a href="../categories/wealth-architecture.html">财富架构</a>
+        <a href="../categories/career-purpose.html">职业使命</a>
+        <a href="../categories/relationship-dynamics.html">关系智慧</a>
+        <a href="../categories/trailblazers.html">思想巨擘</a>
+        <a href="../categories/high-dimensional.html">高维思维</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn-ghost" id="theme-toggle" title="切换深色模式">🌙</button>
+        <button class="btn btn-primary">订阅</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="article-hero">
+    <div class="container">
+      <div class="hero-tag">🧠 自我认知</div>
+      <h1>阴影整合：为什么你必须拥抱黑暗才能完整</h1>
+      <div class="article-meta-bar">
+        <span class="reading-time-badge">📖 约10分钟阅读</span>
+        <span>📅 2026年5月24日</span>
+        <span>✍️ ElevateMind 编辑部</span>
+      </div>
+      <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1200&h=600&fit=crop" alt="光与影的戏剧性对比">
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="ad-unit ad-header" style="margin:24px auto;max-width:1200px;">
+      <p>728×90 头部广告位</p>
+    </div>
+  </div>
+
+  <article class="article-content">
+    <p class="lead" style="font-size:1.2rem;color:var(--color-text-secondary);line-height:1.9;margin-bottom:32px;">
+      有一个版本的你自己，是你从不承认的。它承载了你的暴怒、你的嫉妒、你的自私、你的欲望、你的残忍、你的懦弱、你的虚荣。你花了数年把它锁起来，坚信只要给它足够的沉默，它最终会饿死。它不会。它在以沉默为食。而你假装它不存在的时间越长，它就越有力量从地下塑造你的生活——通过投射、自我破坏，和那些你无法解释的强迫性模式重复。
+    </p>
+
+    <h2>阴影的发明</h2>
+    <p>卡尔·荣格不是第一个注意到人类内部包含多重面向的人。但他给了我们所隐藏的部分最精确的名字。在荣格心理学中，<em>阴影</em>是意识自我所拒绝的一切的仓库——与你所相信的自己相冲突的特质、冲动、记忆和潜能。如果你认为自己是善良的，你的阴影就承载着你的残忍。如果你认为自己是诚实的，你的阴影就承载着你所有的欺骗。如果你认为自己是强大的，你的阴影就承载你的软弱。如果你认为自己是谦逊的，你的阴影就承载你的狂妄。</p>
+    <p>阴影不是邪恶的。它是<em>被压抑的</em>。而压抑不等于消失。当你压抑某样东西时，你把它推出了意识，但它不会停止存在。它继续在梦中运作，在口误中运作，在无法解释的情绪反应中运作，在你莫名厌恶的人身上运作，在你无法打破的自我破坏模式中运作。荣格的表述既优雅又可怕：<em>"除非你使无意识变得有意识，否则它将主导你的生活，而你将称之为命运。"</em></p>
+    <p>阴影在童年时期形成，那时我们学会自己的哪些部分是可接受的，哪些不是。一个表达愤怒而受到惩罚的孩子，学到了愤怒是危险的。一个主张独立而被羞辱的孩子，学到了自主是自私的。一个哭泣却被教导"要坚强"的孩子，学到了脆弱是软弱。这些教训不是显性的。它们通过塑造发展中的心理的数千次微小互动而被吸收。到成年时，大多数人都有高度发达的自我认知——以及对自身同样发达的盲点。</p>
+
+    <div class="pull-quote">
+      "每个人身上都有阴影，它在个体意识生活中的体现越少，它就变得越黑、越浓。"
+      <cite>—— 卡尔·荣格，精神病学家与分析心理学创始人</cite>
+    </div>
+
+    <h2>阴影如何显现</h2>
+    <p>你无法直接看见自己的阴影。这就是压抑的本质——它在意识阈值之下运作。但如果你知道如何倾听，阴影一直在不断宣告自己的存在。以下是它最常见的伪装。</p>
+    <p><strong>投射：</strong>阴影最喜欢的把戏。你无法承认自己的嫉妒，于是你对别人的贪婪变得执着。你无法承认自己的不诚实，于是你痴迷于同事的谎言。你无法容忍自己的攻击性，于是你在所见之处都察觉到敌意。你在自己内心否认什么，就会在周围的人身上放大什么。这就是为什么别人身上最让你恼怒的特质，往往是你最拒绝在自己身上看见的特质。它们不是随机的讨厌之处。它们是那面被你转开的镜子。</p>
+    <p><strong>强迫性重复：</strong>阴影喜欢重现它形成时的条件。如果你在一个爱以成就为条件的环境中长大，你可能会发现自己强迫性地过度工作——或者通过消极反抗而强迫性地低成就。如果你学到的是脆弱会导致被抛弃，你可能会在一段关系需要情感开放的那一刻就破坏它。这些模式感觉像是命运，因为它们是无意识的。它们不是命运。它们是阴影在自动驾驶。</p>
+    <p><strong>突然爆发：</strong>最危险的表现形式。一个从未承认过愤怒的人，会因为一件小事而某天突然爆发。一个从未承认过嫉妒的人，会做出自己无法解释的破坏性举动。一个压抑了自己性欲的人，会陷入强迫性的、自贬的行为中。这些爆发不是"不合性格"。它们是你一直拒绝承认的性格，终于冲破了围墙。</p>
+    <p><strong>抑郁与空虚：</strong>当太多的自我被归入阴影时，有意识的个性就变得稀薄。你可能看起来功能正常——甚至很成功——但感到空洞。这是因为相当大一部分的心理能量被用来维持压抑。阴影不会安静地坐着。它不断地推撞墙壁。把它关起来需要持续的努力，而这种努力耗尽了用于生活的生命力。</p>
+
+    <h2>凝视的勇气</h2>
+    <p>阴影工作不舒服。它不会给人肯定。它不会产生传统自我提升所带来的多巴胺快感。它需要一种特定的勇气：愿意发现自己并不是你以为的那个人。愿意发现自己包含了令人生厌的能力。愿意发现自己最珍视的美德，可能只是对最恐惧的恶德的一种补偿。</p>
+    <p>起点很简单，但也很激进：问问自己你最不喜欢别人身上的什么，然后问问你自己是否曾经那样过。不是问你是否可能是——而是问你是否<em>曾经</em>是过。答案几乎总是肯定的。讨厌傲慢的人曾经傲慢过。鄙视懒惰的人曾经懒惰过。对操纵感到厌恶的人曾经操纵过。这不是一种谴责。这是一种解放。因为一旦你能看见自己身上的这个特质，它就不再能通过投射来控制你了。你可以拥有它。而任何你拥有的东西，你都可以选择。</p>
+    <p>荣格称这个过程为<em>整合</em>——不是消除阴影，而是把它纳入有意识觉知。目标不是成为圣人。圣人往往是最分裂的人，他们可见的纯洁是以隐藏黑暗为代价换来的。目标是变得完整。在不被它们统治的情况下容纳你的矛盾。足够了解你的黑暗，以至于它不再在秘密中运作。</p>
+
+    <div class="pull-quote">
+      "我没有遭遇过什么，我就是我选择成为的样子。但如果我不知道自己内在的完整光谱——光明与黑暗——我就无法明智地选择。"
+      <cite>—— 改编自卡尔·荣格</cite>
+    </div>
+
+    <h2>阴影整合的实践</h2>
+    <p>没有为此设计的App。没有快速修复。阴影工作是缓慢的，常常不舒服的，而且非常个人化的。但有些实践可以创造整合的条件。</p>
+
+    <h3>1. 触发日记</h3>
+    <p>随身携带一个笔记本。每当你对某人有强烈的情绪反应——恼怒、厌恶、愤怒、蔑视——就把它写下来。不是他们做了什么。而是你的反应。问：我在回应他们身上的什么特质？我曾经展现过那个特质吗？在什么情况下？模式会很快浮现。那些最强烈触发你的人，正以不可思议的精确度揭示着你的阴影。这不是一种愉快的练习。但它是诚实的。</p>
+
+    <h3>2. 梦境记录</h3>
+    <p>荣格认为梦是无意识的主要语言。阴影在梦中说话，因为意识的审查官睡着了。你不需要成为荣格分析师才能受益。只需在醒来时记录你的梦。寻找那些困扰你的人物——追逐你、攻击你、引诱你。这些往往是阴影面向，试图与意识取得联系。你越是承认它们，它们就变得越不具威胁性。一个反复出现的梦中人物从怪物变成信使，是整合最可靠的标志之一。</p>
+
+    <h3>3. 积极想象</h3>
+    <p>荣格开发了这种技术与无意识内容进行直接对话。安静地坐着。在脑海中带来一个来自梦境的人物、一个持久的幻想，或者你在触发日记中发现的一个特质。详细地想象这个人物。然后——不主导幻想——允许一场对话自然展开。写下所说的一切。不要审查。结果可能听起来像你自己的声音，也可能像别的什么东西。无论哪种方式，这种练习都在意识和无意识之间建立了一座桥梁，阴影不经过你的觉知就无法跨越。</p>
+
+    <div class="ad-unit ad-in-content">
+      <p>文中广告位</p>
+    </div>
+
+    <h3>4. 诚实的清单</h3>
+    <p>留出一个小时。写下所有你认为不可接受的特质——在你自己身上或别人身上。然后，对每个特质，在你的生活中找到三个你展现过它的例子，无论多么轻微。不是"我本来可以"。你确实做过。也许在不同的语境中。也许程度较轻。但你谴责的每一种恶德的种子都存在于你体内。这不是自我鞭挞。这是虚伪的终结。知道自己黑暗的人，就失去了自以为是的能力——而获得了真正慈悲的能力。</p>
+
+    <h3>5. 面对金色阴影</h3>
+    <p>阴影不仅仅是黑暗的。荣格辨认出一种"金色阴影"——那些我们因为觉得危险、狂妄或与自我形象不兼容而放弃的积极潜能。一个被教导不要炫耀的孩子可能压抑了自己的才华。一个学到野心是自私的孩子可能压抑了自己的驱动力。那些你最钦佩的人——他们的创造力、自信或勇气令你惊讶——往往承载着你的金色阴影。那些你最嫉妒的特质，往往是你一直在自己内心否认的。整合也意味着重新认领这些。</p>
+
+    <h2>整合是什么样的</h2>
+    <p>它看起来不像完美。它看起来不像负面情绪的终结或持续平静的实现。它看起来像是<em>真实</em>——你真实的自己和向世界展示的自己之间的对齐。</p>
+    <p>一个整合的人可以感受愤怒而不变得破坏性。可以感受嫉妒而不去破坏。可以感受欲望而不去剥削。可以感受恐惧而不陷入瘫痪。他们没有消除这些状态。他们容纳它们。他们与它们建立了一种关系。愤怒变成了关于边界的信息。嫉妒变成了关于欲望的信息。恐惧变成了关于什么重要的信息。阴影一旦被整合，就停止成为破坏者，而变成了顾问。</p>
+    <p>这就是为什么阴影工作不仅仅是心理卫生。它是伦理发展。一个整合了自己攻击性的人不会变得暴力。他们变得<em>有能力</em>暴力，因此有能力选择不去暴力。他们获得了保护的能力，而没有攻击的冲动。一个整合了自己自私的人不会变得自恋。他们变得在必要时有能力把自己放在第一位，因此有能力真正的慷慨——因为它是被选择的，不是强迫性的。</p>
+    <p>未整合的人不是自由的。他们是一堆强迫性行为的集合——被看不见的驱动力驱使，重复着无法打破的模式，把他们未拥有的品质投射到一个看起来越来越敌意的世界上。整合的人完全是另一种存在。他们是一个统一体，包含多重面向，意识到自己的矛盾，并在其中拥有主权。</p>
+
+    <div class="pull-quote">
+      "最可怕的事情是完全接受自己。但这也是让真正的改变成为可能的唯一途径。"
+      <cite>—— 卡尔·荣格</cite>
+    </div>
+
+    <h2>持续的工作</h2>
+    <p>整合不是一次性事件。阴影是动态的。随着你成长，新的面向会浮现。你三十岁时所做的工作揭示了二十岁时无法触及的层面。你五十岁时的工作揭示了四十岁时隐藏的东西。每一层新的意识都照亮了一层新的无意识。这不是一个缺陷。它是设计如此。心理是层次化的，它的深度实际上是无穷的。</p>
+    <p>但方向才是重要的。每一次整合——每一次诚实的自我看见，每一次拥有的冲动，每一次收回的投射——都减少了阴影的力量。那些曾经控制你的模式变得可见，而可见的东西可以被选择。那些曾经触发你的人变成了你可以直视而不退缩的镜子。那些曾经困扰你的梦变成了对话。</p>
+    <p>大多数人不会做这项工作。它太不舒服了。太不 flattering 了。太慢了。市场更喜欢那些承诺快速转变的技术，而不需要你去看见自己最不想看见的东西。但没有通往完整的捷径。唯一的出路是穿过。唯一停止被你不了解的自己所控制的方法，是去了解它——并在有生之年持续了解。</p>
+    <p>回报不是道德优越感。它是自由。感受一切而不被任何东西统治的自由。成为充分的人类的自由——黑暗与光明，残忍与善良，渺小与浩瀚——并在意识觉知中容纳这一切。这就是荣格所说的个体化。不是完美。是完整。而完整，是唯一能让真正的人生从中生长出来的土壤。</p>
+
+    <div class="key-takeaways">
+      <h2>🎯 核心要点</h2>
+      <ul>
+        <li><strong>阴影是你所压抑的一切。</strong>与自我形象相冲突的特质、冲动和潜能不会因为否认而消失——它们会转入地下，通过投射、重复和爆发来塑造你的生活。</li>
+        <li><strong>投射是阴影的主要语言。</strong>你最厌恶别人身上的特质，往往是你最拒绝在自己身上承认的特质。这些不是随机的讨厌之处——它们是镜子。</li>
+        <li><strong>整合不是消除，而是纳入。</strong>阴影工作的目标不是成为圣人，而是变得完整——足够了解你的黑暗，以至于它不再在秘密中运作。</li>
+        <li><strong>实用工具包括触发日记、梦境工作、积极想象和诚实清单。</strong>这些在意识和无意识之间建立桥梁，让阴影可见，因此可以选择。</li>
+        <li><strong>阴影也有金色的一面。</strong>创造力、自信、野心等积极潜能也常常与黑暗一起被压抑。整合意味着重新认领你是谁的完整光谱。</li>
+      </ul>
+    </div>
+
+    <div class="share-section">
+      <span>分享这篇文章：</span>
+      <div class="share-btns">
+        <a href="https://twitter.com/intent/tweet?text=%E9%98%B4%E5%BD%B1%E6%95%B4%E5%90%88%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E5%BF%85%E9%A1%BB%E6%8B%A5%E6%8A%B1%E9%BB%91%E6%9A%97%E6%89%8D%E8%83%BD%E5%AE%8C%E6%95%B4&url=https://elevatemind.io/articles/shadow-self-integration.html" class="share-btn" target="_blank" title="分享到 X">𝕏</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://elevatemind.io/articles/shadow-self-integration.html" class="share-btn" target="_blank" title="分享到 Facebook">f</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://elevatemind.io/articles/shadow-self-integration.html" class="share-btn" target="_blank" title="分享到 LinkedIn">in</a>
+        <a href="https://reddit.com/submit?url=https://elevatemind.io/articles/shadow-self-integration.html&title=%E9%98%B4%E5%BD%B1%E6%95%B4%E5%90%88%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E5%BF%85%E9%A1%BB%E6%8B%A5%E6%8A%B1%E9%BB%91%E6%9A%97%E6%89%8D%E8%83%BD%E5%AE%8C%E6%95%B4" class="share-btn" target="_blank" title="分享到 Reddit">r</a>
+      </div>
+    </div>
+
+    <div class="related-articles">
+      <h2>相关文章</h2>
+      <div class="related-grid">
+        <a href="emotional-regulation.html" class="related-card">
+          <h4>情绪调控：没人教过你的超级能力</h4>
+          <p>每一次重大抉择、每一场艰难对话、每一个你真正定义自己的时刻背后的隐形力量。</p>
+        </a>
+        <a href="mindfulness-beyond-apps.html" class="related-card">
+          <h4>正念觉醒：超越冥想APP的深层存在之道</h4>
+          <p>你的手机无法教你临在。真正的正念比游戏化版本更混乱、更艰难，也 infinitely 更值得。</p>
+        </a>
+        <a href="authentic-self-difficulty.html" class="related-card">
+          <h4>真实自我：为什么做自己这么难</h4>
+          <p>在一个不断告诉你应该成为谁的世界里，做自己是最终极的叛逆——也是最深层的解放。</p>
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <div class="container">
+    <div class="ad-unit ad-in-content" style="max-width:720px;margin:0 auto 40px;">
+      <p>文中广告位</p>
+    </div>
+  </div>
+
+  <section class="container">
+    <div class="newsletter-section">
+      <h3>一个改变你人生的思想，每周日送达</h3>
+      <p>加入 50,000+ 拒绝梦游般生活的觉醒者。没有噪音。没有废话。只有精炼的智慧。</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="输入你的邮箱，开启觉醒之旅" required>
+        <button type="submit" class="btn btn-primary">免费订阅</button>
+      </form>
+      <p style="font-size:0.75rem;color:var(--color-text-muted);margin-top:12px;">绝无垃圾邮件。随时取消订阅。来自 120+ 个国家的思想者已加入。</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../" class="logo"><span class="logo-mark">◈</span><span>ElevateMind</span></a>
+          <p>全球觉醒者的精神家园。我们策划关于意识、财富、使命和人类潜能的变革性思想。</p>
+          <div class="share-btns" style="margin-top:16px;">
+            <a href="https://twitter.com/elevatemind" class="share-btn" target="_blank">𝕏</a>
+            <a href="https://facebook.com/elevatemind" class="share-btn" target="_blank">f</a>
+            <a href="https://linkedin.com/company/elevatemind" class="share-btn" target="_blank">in</a>
+            <a href="https://reddit.com/r/elevatemind" class="share-btn" target="_blank">r</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>探索</h4>
+          <a href="../categories/conscious-self.html">自我认知</a>
+          <a href="../categories/wealth-architecture.html">财富架构</a>
+          <a href="../categories/career-purpose.html">职业使命</a>
+          <a href="../categories/relationship-dynamics.html">关系智慧</a>
+          <a href="../categories/high-dimensional.html">高维思维</a>
+        </div>
+        <div class="footer-links">
+          <h4>资源</h4>
+          <a href="../deep-dives/">深度专题</a>
+          <a href="../categories/life-guides.html">生活指南</a>
+          <a href="../books/">书籍摘要</a>
+          <a href="../audio/">音频洞见</a>
+          <a href="../search.html">搜索</a>
+        </div>
+        <div class="footer-links">
+          <h4>关于</h4>
+          <a href="../about.html">关于我们</a>
+          <a href="../advertise.html">广告合作</a>
+          <a href="../membership.html">会员计划</a>
+          <a href="../privacy.html">隐私政策</a>
+          <a href="../contact.html">联系我们</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 ElevateMind。保留所有权利。为全球觉醒者精心打造。</p>
+        <p>用 ◈ 为拒绝平庸的人而制作。</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="ad-sticky" id="sticky-ad">
+    <div style="display:flex;align-items:center;gap:16px;">
+      <span style="font-size:0.75rem;color:var(--color-text-muted);">广告</span>
+      <span style="font-size:0.85rem;">🚀 开启你的在线事业——免费大师课程</span>
+      <button class="btn btn-primary" style="padding:6px 14px;font-size:0.75rem;">了解更多</button>
+    </div>
+    <button id="close-sticky-ad" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);padding:4px;color:var(--color-text-muted);">✕</button>
+  </div>
+
+  <div class="cookie-banner" id="cookie-banner">
+    <p>🍪 我们使用 Cookie 来提升你的浏览体验。继续使用即表示你同意我们的<a href="../privacy.html">隐私政策</a>。</p>
+    <button class="btn btn-primary" id="cookie-accept" style="padding:8px 20px;">同意并继续</button>
+  </div>
+
+  <button class="scroll-top" id="scroll-top">↑</button>
+  <script src="../js/main.js"></script>
+</body>
+</html>

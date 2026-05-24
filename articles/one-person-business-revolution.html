@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The One-Person Business Revolution | ElevateMind</title>
+  <meta name="description" content="The era of needing employees, investors, and office space to build a meaningful income is over. How solopreneurs are earning six and seven figures alone.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .article-hero { position: relative; height: 480px; overflow: hidden; }
+    .article-hero img { width: 100%; height: 100%; object-fit: cover; }
+    .article-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.2) 50%, transparent 100%); }
+    .article-hero-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 40px 24px; max-width: 1280px; margin: 0 auto; color: white; }
+    .article-hero-content .hero-tag { background: rgba(255,255,255,0.2); color: white; backdrop-filter: blur(8px); }
+    .article-hero-content h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 16px; max-width: 800px; text-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .article-hero-content .lead { color: rgba(255,255,255,0.85); max-width: 600px; font-size: 1.1rem; }
+    .article-meta-bar { display: flex; align-items: center; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--color-border); margin-bottom: 32px; font-size: 0.875rem; color: var(--color-text-secondary); }
+    .article-meta-bar .author { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+    .author-avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--color-accent); display: flex; align-items: center; justify-content: center; color: white; font-size: 0.8rem; }
+    .article-layout { display: grid; grid-template-columns: 1fr 320px; gap: 48px; }
+    .article-body { font-size: 1.05rem; line-height: 1.85; }
+    .article-body p { margin-bottom: 24px; }
+    .article-body h2 { font-size: 1.6rem; margin: 48px 0 20px; color: var(--color-text); }
+    .article-body h3 { font-size: 1.25rem; margin: 32px 0 16px; color: var(--color-text); }
+    .pull-quote { border-left: 4px solid var(--color-accent); padding: 24px 28px; margin: 36px 0; background: var(--color-accent-light); border-radius: 0 var(--radius-md) var(--radius-md) 0; font-family: var(--font-heading); font-size: 1.25rem; font-style: italic; line-height: 1.6; color: var(--color-text); }
+    .pull-quote cite { display: block; margin-top: 12px; font-family: var(--font-body); font-size: 0.85rem; font-style: normal; color: var(--color-text-secondary); }
+    .key-takeaways { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 32px; margin: 40px 0; }
+    .key-takeaways h3 { margin: 0 0 20px; font-size: 1.2rem; }
+    .key-takeaways ul { list-style: none; padding: 0; }
+    .key-takeaways li { padding: 10px 0 10px 32px; position: relative; border-bottom: 1px solid var(--color-border); }
+    .key-takeaways li:last-child { border-bottom: none; }
+    .key-takeaways li::before { content: '✓'; position: absolute; left: 0; color: var(--color-success); font-weight: 700; }
+    .social-share { display: flex; align-items: center; gap: 12px; margin: 40px 0; padding: 24px 0; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+    .social-share span { font-weight: 600; font-size: 0.9rem; margin-right: 8px; }
+    .related-articles { margin: 48px 0; }
+    .related-articles h3 { font-size: 1.3rem; margin-bottom: 20px; }
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .related-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 20px; transition: all 0.3s; }
+    .related-card:hover { border-color: var(--color-accent); transform: translateY(-2px); }
+    .related-card h4 { font-size: 0.95rem; margin-bottom: 8px; }
+    .related-card p { font-size: 0.8rem; color: var(--color-text-secondary); }
+    .reading-time { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.15); padding: 4px 12px; border-radius: 100px; font-size: 0.8rem; color: white; margin-top: 12px; }
+    .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 32px 0; }
+    .stat-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 24px; text-align: center; }
+    .stat-card .number { font-family: var(--font-heading); font-size: 2rem; font-weight: 700; color: var(--color-accent); }
+    .stat-card .label { font-size: 0.85rem; color: var(--color-text-secondary); margin-top: 4px; }
+    @media (max-width: 900px) { .article-layout { grid-template-columns: 1fr; } .related-grid { grid-template-columns: 1fr; } .stats-grid { grid-template-columns: 1fr; } .article-hero { height: 360px; } }
+  </style>
+</head>
+<body>
+  <div class="read-progress" id="read-progress"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../" class="logo"><span class="logo-mark">◈</span><span>ElevateMind</span></a>
+      <nav class="nav-links">
+        <a href="../">Home</a>
+        <a href="../categories/conscious-self.html">Conscious Self</a>
+        <a href="../categories/wealth-architecture.html" class="active">Wealth</a>
+        <a href="../categories/career-purpose.html">Career</a>
+        <a href="../categories/trailblazers.html">Trailblazers</a>
+        <a href="../categories/high-dimensional.html">High-Dimensional</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn-ghost" id="theme-toggle">🌙</button>
+        <button class="btn btn-primary">Subscribe</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="article-hero">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&h=800&fit=crop" alt="One-Person Business Revolution">
+    <div class="article-hero-overlay"></div>
+    <div class="article-hero-content">
+      <div class="hero-tag">Wealth Architecture</div>
+      <h1>The One-Person Business Revolution</h1>
+      <p class="lead">The era of needing employees, investors, and office space to build a meaningful income is over. A new class of solopreneurs is earning six and seven figures alone — and they're rewriting every rule of business.</p>
+      <div class="reading-time">⏱ 16 min read</div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 32px;">
+    <div class="article-layout">
+      <article class="article-body">
+        <div class="article-meta-bar">
+          <div class="author">
+            <div class="author-avatar">EM</div>
+            <span>ElevateMind Editorial</span>
+          </div>
+          <span>📅 May 22, 2026</span>
+          <span>👁 389 views</span>
+          <span>💬 56 comments</span>
+        </div>
+
+        <p class="lead">In 1995, if you wanted to build a company that generated a million dollars in revenue, you needed a team. You needed office space. You needed investors, payroll systems, health insurance policies, and a human resources department. The fixed costs alone — before a single customer paid you — could run into the hundreds of thousands.</p>
+
+        <p>In 2026, a single person with a laptop, an internet connection, and a specific set of skills can generate that same million dollars with near-zero overhead. No employees. No office. No investors. No board meetings. Just one human being, operating at the intersection of expertise, distribution, and leverage.</p>
+
+        <p>This is not a trend. It is a structural transformation of how value is created, captured, and scaled. And it is happening beneath the radar of the business media, the MBA programs, and the venture capital ecosystem that still operates on a playbook written for a world that no longer exists.</p>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="number">$1.2T</div>
+            <div class="label">Creator economy market size by 2030</div>
+          </div>
+          <div class="stat-card">
+            <div class="number">50M+</div>
+            <div class="label">People earning income as creators globally</div>
+          </div>
+          <div class="stat-card">
+            <div class="number">$275K</div>
+            <div class="label">Median annual revenue for top 1% solopreneurs</div>
+          </div>
+        </div>
+
+        <h2>The Death of the Employment Contract</h2>
+
+        <p>For two centuries, the dominant economic relationship was employment: one person sells their time to an organization in exchange for a salary, benefits, and the illusion of security. This model made sense in an industrial economy where capital was scarce, coordination was expensive, and scale required physical presence.</p>
+
+        <p>Today, the economics have inverted. Capital is abundant — venture funding, credit, and digital infrastructure have never been more accessible. Coordination is essentially free — a solopreneur can hire contractors on Upwork, manage projects on Notion, accept payments on Stripe, and reach customers on social media, all within an hour of deciding to start.</p>
+
+        <p>The result? The employment contract is dying. Not because employers are evil or employees are lazy, but because the underlying economic logic that made employment rational has evaporated.</p>
+
+        <div class="pull-quote">
+          "The one-person business is not a stepping stone to a 'real' company. It is the real company. It is the optimal form for a specific class of economic activity that never needed a corporation in the first place."
+          <cite>— Naval Ravikant, on the architecture of modern work</cite>
+        </div>
+
+        <h2>What Is a One-Person Business, Really?</h2>
+
+        <p>Let's be precise. A one-person business is not a freelancer trading time for money. It is not a consultant billing by the hour. It is not someone with a side hustle.</p>
+
+        <p>A one-person business is a system — a structured, scalable, and often automated revenue engine — operated by a single individual. It leverages one or more of the following:</p>
+
+        <p><strong>Digital products:</strong> courses, templates, software, ebooks, subscriptions. Create once, sell infinitely. Marginal cost approaches zero.</p>
+
+        <p><strong>Audience monetization:</strong> newsletters, podcasts, YouTube channels, social media followings. Build trust at scale, then monetize through sponsorships, affiliate revenue, or premium content.</p>
+
+        <p><strong>Micro-agency model:</strong> a single brand, a single point of contact, but a network of contractors executing delivery. The solopreneur owns the client relationship and the margin; contractors own the execution.</p>
+
+        <p><strong>Automated services:</strong> SaaS tools, apps, algorithms, or digital services that run with minimal ongoing intervention. The founder builds the machine; the machine generates revenue.</p>
+
+        <p>The common thread? <strong>Leverage.</strong> The one-person business replaces labor leverage (employees) with capital leverage (technology), media leverage (content), or code leverage (automation). One person does not try to do the work of ten. One person builds systems that do the work of hundreds.</p>
+
+        <h2>The Economics That Make It Possible</h2>
+
+        <p>To understand why the one-person business is not just viable but increasingly dominant, we need to look at the economic fundamentals.</p>
+
+        <p><strong>Fixed costs have collapsed.</strong> A professional website costs $20/month. Email marketing is free until you have thousands of subscribers. Payment processing is a percentage. Video editing software is free. The infrastructure that once required a $50,000 setup now requires $500 and a few hours.</p>
+
+        <p><strong>Distribution is democratized.</strong> In the old world, reaching customers required advertising budgets, sales teams, and physical presence. In the new world, a single viral tweet, a well-ranked blog post, or a popular YouTube video can reach millions. Distribution is no longer the bottleneck — attention is.</p>
+
+        <p><strong>Specialization pays exponential premiums.</strong> The internet does not reward general competence. It rewards extreme specialization. A consultant who helps SaaS companies reduce churn by 2% can charge $50,000 for a single engagement — because that 2% might be worth millions to the client. One person. One specific skill. One transformational outcome.</p>
+
+        <p><strong>Compound returns on intellectual property.</strong> When you write a book, record a course, or build a piece of software, you create an asset that generates returns indefinitely. Unlike a salary, which resets to zero every pay period, intellectual property compounds. Year one might generate $10,000. Year five might generate $100,000 from the same asset.</p>
+
+        <h2>The Psychology of the Solo Operator</h2>
+
+        <p>Building a one-person business requires a specific psychological profile — one that is distinct from both the corporate employee and the traditional entrepreneur.</p>
+
+        <p><strong>Self-direction.</strong> Without a boss, a team, or a board, you must be capable of setting your own priorities, holding yourself accountable, and working without external structure. This sounds liberating. For many people, it is paralyzing. The freedom to do anything becomes the inability to do anything consistently.</p>
+
+        <p><strong>Comfort with ambiguity.</strong> A solopreneur does not have a "role." One hour you are writing copy. The next you are debugging a payment flow. The next you are negotiating with a sponsor. There is no job description. There is only what needs to be done.</p>
+
+        <p><strong>Disciplined energy management.</strong> Without colleagues, meetings, and office social dynamics to structure your day, you must design your own rhythm. The most successful solopreneurs treat their energy as a strategic resource — scheduling deep work, protecting recovery, and eliminating distractions with the same rigor a CEO applies to quarterly targets.</p>
+
+        <p><strong>Long-term orientation.</strong> The one-person business typically grows more slowly in year one than a funded startup. But by year five, it often generates more profit per operator than a venture-backed company with fifty employees. The solopreneur must be willing to trade early speed for sustainable compounding.</p>
+
+        <div class="pull-quote">
+          "The one-person business is a test of whether you can be your own boss, your own employee, and your own investor — simultaneously. Most people fail not because the model doesn't work, but because they cannot manage all three roles in one body."
+          <cite>— ElevateMind observation on solopreneur psychology</cite>
+        </div>
+
+        <h2>The Seven Archetypes of the One-Person Business</h2>
+
+        <p>Not all one-person businesses are the same. Through extensive analysis of successful solo operators, seven distinct archetypes have emerged:</p>
+
+        <h3>1. The Educator</h3>
+        <p>Builds courses, writes books, runs workshops. Revenue comes from transforming expertise into scalable learning products. Think: Andrew Huberman's podcast empire, Ali Abdaal's productivity courses, or Tim Ferriss's book-based business.</p>
+
+        <h3>2. The Operator</h3>
+        <p>Runs a micro-agency — one brand, multiple contractors, direct client relationships. Revenue comes from service delivery at premium prices. Think: a brand strategist with three designers on retainer, or a marketing consultant with a network of freelance specialists.</p>
+
+        <h3>3. The Builder</h3>
+        <p>Creates software, apps, or digital tools. Revenue comes from subscriptions, licenses, or usage fees. Think: the indie hacker who built a $50,000/month SaaS tool, or the Notion template creator with 100,000 customers.</p>
+
+        <h3>4. The Voice</h3>
+        <p>Monetizes attention through content. Revenue comes from sponsorships, affiliate marketing, memberships, and product sales to an audience. Think: newsletter writers with 100,000 subscribers, or YouTubers with a loyal following.</p>
+
+        <h3>5. The Advisor</h3>
+        <p>Sells high-ticket expertise directly to clients. Revenue comes from consulting, coaching, or advisory retainers. Think: the executive coach charging $2,000 per hour, or the cybersecurity consultant who works with three Fortune 500 companies.</p>
+
+        <h3>6. The Trader</h3>
+        <p>Operates in financial markets — not as a gambler, but as a systematic operator with defined strategies and risk management. Revenue comes from alpha generation, not prediction. This archetype is rare and requires exceptional discipline.</p>
+
+        <h3>7. The Curator</h3>
+        <p>Builds businesses around aggregation, selection, and community. Revenue comes from membership fees, event tickets, or affiliate relationships. Think: the founder of a premium community who charges $500/year for access to a curated network.</p>
+
+        <p>Most successful solopreneurs eventually blend two or three archetypes. The Educator also becomes a Voice. The Builder adds an Operator layer. The Advisor develops a course and becomes an Educator. The power is in the compounding of these models.</p>
+
+        <h2>The Hidden Risk: The Ceiling and the Floor</h2>
+
+        <p>The one-person business is not without risks. Two in particular deserve honest examination.</p>
+
+        <p><strong>The ceiling problem:</strong> Without employees, there is a hard limit to how much one person can do. Even with automation, even with contractors, the business is bottlenecked by the founder's capacity. Some solopreneurs hit $500,000/year and stall. Others find ways to systematize further and push past $2 million. The ceiling is real, but it is higher than most people assume — and it can be raised through productization and automation.</p>
+
+        <p><strong>The floor problem:</strong> Without a salary, there is no guaranteed income. The solopreneur lives with genuine volatility. One month might generate $50,000. The next might generate $5,000. This requires financial reserves, psychological resilience, and the discipline to not overspend during good months. The floor is zero, and it is always closer than it feels.</p>
+
+        <p>The honest truth? Both problems are manageable for the right person. The ceiling can be raised. The floor can be padded. But neither happens automatically. They require intentional system design.</p>
+
+        <h2>How to Begin: A Practical Framework</h2>
+
+        <p>If the one-person business model resonates with you, here is a framework for getting started without quitting your job, risking your savings, or making reckless bets.</p>
+
+        <p><strong>Phase 1: Validate (Months 1-6)</strong></p>
+        <p>Start with a skill you already have. Offer it to ten people for free or at a steep discount. Learn what they actually value. Refine your offer. Collect testimonials. Do not build a product yet. Do not register an LLC. Just validate that someone will pay for what you can do.</p>
+
+        <p><strong>Phase 2: Productize (Months 6-12)</strong></p>
+        <p>Take what you have learned and turn your service into a product — a defined package with a fixed price, clear scope, and repeatable process. The goal is to stop trading time for money and start trading outcomes for money. One successful engagement should become a case study for the next ten.</p>
+
+        <p><strong>Phase 3: Scale with Systems (Year 2)</strong></p>
+        <p>Automate what can be automated. Hire contractors for what cannot. Build content that attracts inbound interest. Develop a product ladder — from free content to low-ticket products to high-ticket services. The goal is to create multiple revenue streams, each requiring less of your direct time.</p>
+
+        <p><strong>Phase 4: Compound (Year 3+)</strong></p>
+        <p>By year three, a successful one-person business should have at least three revenue streams, a body of intellectual property generating passive income, and a network that produces opportunities without active prospecting. This is when the model becomes genuinely life-changing.</p>
+
+        <div class="key-takeaways">
+          <h3>🔑 Key Takeaways</h3>
+          <ul>
+            <li><strong>One-person businesses are not side hustles.</strong> They are full-fledged revenue systems operated by a single individual, leveraging technology, media, and automation instead of employees.</li>
+            <li><strong>Fixed costs have collapsed and distribution is free.</strong> The infrastructure that once required $50,000 now requires $500. The bottleneck is no longer capital — it is clarity and execution.</li>
+            <li><strong>Specialization pays exponential premiums.</strong> The internet rewards extreme expertise in narrow domains, not general competence across broad categories.</li>
+            <li><strong>Intellectual property compounds.</strong> Courses, books, software, and content create assets that generate returns indefinitely, unlike a salary that resets every pay period.</li>
+            <li><strong>The psychology matters more than the tactics.</strong> Self-direction, comfort with ambiguity, and long-term orientation are prerequisites that no tool or course can provide.</li>
+            <li><strong>Start by validating, then productize, then systematize.</strong> Do not build before you know someone will pay. Do not scale before you have a repeatable process.</li>
+            <li><strong>The ceiling is higher than you think.</strong> With the right systems, a single person can generate seven-figure revenue. The floor is also real — plan for volatility and build reserves.</li>
+          </ul>
+        </div>
+
+        <div class="ad-unit ad-in-content">
+          <p>Native In-Content Ad — Sponsored Article / Affiliate Recommendation</p>
+        </div>
+
+        <div class="social-share">
+          <span>Share this insight:</span>
+          <a href="https://twitter.com/intent/tweet?text=The%20One-Person%20Business%20Revolution%20—%20How%20solopreneurs%20are%20earning%20six%20and%20seven%20figures%20alone&url=https://elevatemind.io/articles/one-person-business-revolution.html" class="share-btn" target="_blank">𝕏</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://elevatemind.io/articles/one-person-business-revolution.html" class="share-btn" target="_blank">f</a>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://elevatemind.io/articles/one-person-business-revolution.html" class="share-btn" target="_blank">in</a>
+          <a href="https://reddit.com/submit?url=https://elevatemind.io/articles/one-person-business-revolution.html&title=The%20One-Person%20Business%20Revolution" class="share-btn" target="_blank">r</a>
+        </div>
+
+        <div class="related-articles">
+          <h3>Continue Reading</h3>
+          <div class="related-grid">
+            <a href="emma-grede-wealth-code.html" class="related-card">
+              <h4>Emma Grede Reveals the Core Code of Wealth Creation</h4>
+              <p>From a 15-year-old dropout to billion-dollar brands — the hidden architecture of self-made wealth.</p>
+            </a>
+            <a href="financial-intelligence-school-never-taught.html" class="related-card">
+              <h4>Financial Intelligence: What School Never Taught</h4>
+              <p>The most important subject was never on the syllabus. Here is what you actually need to know.</p>
+            </a>
+            <a href="passive-income-streams-that-work.html" class="related-card">
+              <h4>Passive Income Streams That Actually Work</h4>
+              <p>Seven genuinely viable passive income streams ranked by capital, time, and sustainability.</p>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <aside>
+        <div class="ad-unit ad-sidebar" style="margin-bottom:24px;">
+          <p>300×250 Sidebar Ad</p>
+        </div>
+        <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:24px;margin-bottom:24px;">
+          <h3 style="font-size:1rem;margin-bottom:8px;">📬 Weekly Wisdom</h3>
+          <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-bottom:16px;">One powerful idea, every Sunday. No noise. No fluff.</p>
+          <form class="newsletter-form" style="flex-direction:column;">
+            <input type="email" placeholder="your@email.com" required>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Join 50,000+ Readers</button>
+          </form>
+        </div>
+        <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:24px;">
+          <h3 style="font-size:1rem;margin-bottom:16px;">🔥 Trending in Wealth</h3>
+          <div style="display:flex;flex-direction:column;gap:14px;">
+            <a href="psychology-spending-vs-investing.html" style="font-size:0.85rem;font-weight:600;line-height:1.5;">The Psychology of Spending vs. Investing</a>
+            <a href="building-wealth-by-decade.html" style="font-size:0.85rem;font-weight:600;line-height:1.5;">Building Wealth in Your 20s, 30s, and 40s</a>
+            <a href="antifragile-portfolio.html" style="font-size:0.85rem;font-weight:600;line-height:1.5;">The Antifragile Portfolio</a>
+            <a href="money-as-energy.html" style="font-size:0.85rem;font-weight:600;line-height:1.5;">Money as Energy: A Philosophical Reframe</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <section class="container">
+    <div class="newsletter-section">
+      <h3>Master Your Financial Architecture</h3>
+      <p>One transformative idea on wealth and financial intelligence, every Sunday. Join 50,000+ readers.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="your@email.com" required>
+        <button type="submit" class="btn btn-primary">Subscribe Free</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../" class="logo"><span class="logo-mark">◈</span><span>ElevateMind</span></a>
+          <p>A global sanctuary for awakened minds.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <a href="../categories/conscious-self.html">Conscious Self</a>
+          <a href="../categories/wealth-architecture.html">Wealth Architecture</a>
+          <a href="../categories/career-purpose.html">Career & Purpose</a>
+          <a href="../categories/relationship-dynamics.html">Relationships</a>
+          <a href="../categories/high-dimensional.html">High-Dimensional</a>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <a href="../about.html">About</a>
+          <a href="../advertise.html">Advertise</a>
+          <a href="../privacy.html">Privacy</a>
+          <a href="../terms.html">Terms</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 ElevateMind. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cookie-banner" id="cookie-banner">
+    <p>🍪 We use cookies. <a href="../privacy.html">Privacy Policy</a>.</p>
+    <button class="btn btn-primary" id="cookie-accept">Accept</button>
+  </div>
+  <button class="scroll-top" id="scroll-top">↑</button>
+  <script src="../js/main.js"></script>
+</body>
+</html>
